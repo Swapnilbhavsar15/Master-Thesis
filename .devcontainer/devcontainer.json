@@ -1,0 +1,14 @@
+{
+  "name": "LaTeX",
+  // Use the official LaTeX container from Microsoft
+  "image": "mcr.microsoft.com/vscode/devcontainers/latex:2",
+  "customizations": {
+    "vscode": {
+      // Installs the LaTeX Workshop extension
+      "extensions": ["james-yu.latex-workshop"]
+    }
+  },
+  // Adjust to point at your root .tex file
+  "postCreateCommand": "latexmk -pdf -interaction=nonstopmode main.tex",
+  "remoteUser": "vscode"
+}
