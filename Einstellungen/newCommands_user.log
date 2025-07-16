@@ -1,0 +1,30 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=latex 2015.9.18)  10 MAR 2017 11:16
+entering extended mode
+**newCommands_user.tex
+
+(M:\Finkbeiner_Jakob\6_Dokumentation\Ausarbeitung\Vorlagen\INT_Ausarbeitung_Vorlage_Latex\Einstellungen\newCommands_user
+.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
+, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
+ian, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
+ kannada, kurmanji, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman
+-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
+ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, w
+elsh, loaded.
+)
+! Emergency stop.
+<*> newCommands_user.tex
+                        
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 145 strings out of 493922
+ 887 string characters out of 3147293
+ 49031 words of memory out of 3000000
+ 3538 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 7i,0n,6p,118b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.

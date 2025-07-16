@@ -1,0 +1,35 @@
+\chapter{Conclusion}
+
+In this thesis, a robust system to train the model over different datasets and evaluation of those models over the streamed data from DAS configurator application is explained. The data is collected from a set experimental setup location (Energy Building) and different models such as ConvNext V2 and EfficientNet models are selected for same.  Data contains the footsteps and dataset was created by extracting the footsteps from the raw data. Two different types of datasets were created, one with 1 spatial channel and 1.728 seconds of sample length and other with 10 spatial channels and 2 seconds. Dataset contains two labels one for background noise and other for footsteps. Data from the datasets needs to be preprocessed before training the models.
+
+Prepocessing steps included the following:
+\begin{itemize}
+\item \texttt{Spectrogram Generation:} The raw phase data is transformed into spectrograms using the STFT function. Spectrograms shows the clear spikes for the footsteps making it easier for the model to learn patterns.
+\item \texttt{Normalization:} Spectrogram tensors are normalized by calculating the mean and standard deviation over the entire dataset. It helps in stabilizing the training and ensuring the smooth convergence of model.
+\item \texttt{Data Augmentation:} Different data augmentation techniques such as horiziontal flipping, amplitude scaling, horizontal stretching and addition of gaussian noise were used. This helps in increasing the diversity in dataset and improving generalization for the model.
+\end{itemize}
+
+Using the preprocessed data, the model are trained and tested over the different datasets. The training and testing results are analyzed and compared. For the ConvNext V2 model, the testing accuracies are 87.55\% and 99.48\% for 1 spatial channel and 10 spatial channel datasets respectively. The losses for the same model are 0.36 and 0.05 respectively. For the EfficientNet model, the testing accuracies are same at 99.43\% for 1 spatial channel and 10 spatial channel datasets respectively. The losses are also same at 0.09 for both dataset. The results show the similar performance for both models on the 10 spatial channel dataset while EfficientNet model performs better on 1 spatial channel dataset.
+
+The trained models are evaluated over the unknown data and the similar performance is seen on the streamed data from the DAS configurator application. Although a precise overall accuracy cannot be computed in real time, the models reliably highlight the footstep trail, mirroring their test dataset results. It was observed that the 10 spatial channel models are performing better than the 1 spatial channel models as it gives a lot lesser false positives. Detections are a lot focused on 10 spatial channel dataset as the model is able to learn patterns from multiple channels more effectively.
+
+\section{Future Work}
+
+Model training is an iterative process to keep improving the performance of the model. The model is trained and tested over the experimental setup proposed. Thus there are several areas which will be looked upon to improve the performance of the model.
+
+\subsection{Improving the Dataset and Training the Model}
+After evaluating the model, there are lot of false positives in the detections especially in the noisy zones. These can be adjusted by increasing the threshold but there might be chance of fainter footsteps not being detected. The evaluation framework stores the detections as .npy files. False positives can be picked from them manually and added to the dataset. The background noise which is detected as footsteps are added to the dataset. Using the updated dataset, the model can be trained which helps model to learn the patterns more effectively and improve the performance of the model thus improving the accuracy and reducing the false positives. 
+
+This process can be repeated iteratively to keep improving the performance of the model. To generalize the model, the dataset can be extended by adding more data from different locations and different people. This will help in improving the performance of the model.
+
+\subsection{Addition of different activities}
+The current model is used to detect footsteps by distinguishing them from background noise. The model can be extended to detect different activities such as fence cutting, climbing and digging. Dataset can be created for these activities and model can be trained on them. Using the model trained on these activities, the model can be used for perimeter monitoring. 
+
+Perimeter monitoring can be used in various locations such as airports, borders and national parks. Different activities based on the location can be added to the model. These models can be deployed to the locations and can be used for real time monitoring of the activities. 
+
+\section{Perspective}
+In the thesis, a demonstration of the viability of the phase based footstep detection using spectrogram classifiers on both single and multi spatial channel DAS data, it opens broader possibilities for future avenue. One direction is to increase the robustness of the model by training it repeatedly by improving the dataset with the help of evaluation framework.
+
+Second direction is to extend the model to detect different activities which can be used for perimeter monitoring and surveillance. The model can be used for the location specific activities and can be served for the needs of the location.
+
+Together, these extensions will move from the proof of concept to a more general, scalable DAS based perimeter monitoring platform.

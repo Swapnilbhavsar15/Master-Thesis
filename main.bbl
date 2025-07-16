@@ -1,0 +1,192 @@
+\begin{thebibliography}{10}
+
+\bibitem{Airport_Image}
+{AP Sensing Marketing Hub}, ``Gpec.png.''
+\newblock Social media image/template stored in the Marketing Hub SharePoint
+  workspace. Accessed: 2023-10-05.
+
+\bibitem{DAS_PPT}
+{AP Sensing}, {\em DAS - 2P Squared Technology}.
+\newblock AP Sensing, october 2024~ed., 2024.
+\newblock Available in the AP Sensing SharePoint archive. Accessed: 2025-04-04.
+
+\bibitem{DAS_Manual}
+{AP Sensing}, {\em DAS User's Guide (Ed. 1)}.
+\newblock AP Sensing, august 2021~ed., 2021.
+\newblock Available in the Project Olympus SharePoint archive. Accessed:
+  2023-10-05.
+
+\bibitem{Waterfall}
+{AP Sensing}, {\em DAS Waterfall}.
+\newblock AP Sensing, november 2024~ed., 2024.
+\newblock Available in the AP Sensing SharePoint archive. Accessed: 2025-04-04.
+
+\bibitem{DAS_Configurator_Manual}
+{AP Sensing}, {\em DAS Configurator Client User's Guide (Ed. 7)}.
+\newblock AP Sensing, 7~ed., 2024.
+\newblock Available in the AP Sensing SharePoint archive. Accessed: 2025-04-04
+  [[1], [3], [7]].
+
+\bibitem{kitten}
+{Pixabay}, ``White and grey kitten on brown and black leopard print textile,''
+  2023.
+\newblock Photo retrieved from Pexels. Accessed: 2023-10-05.
+
+\bibitem{energy_ppt}
+{AP Sensing}, {\em DAS Demo Setup at Energiezentrale Hulb}.
+\newblock AP Sensing, 2024.
+\newblock Available in the AP Sensing SharePoint archive. Accessed: 2025-04-28.
+
+\bibitem{duckworth}
+G.~L. Duckworth, ``Distributed sensing applications of rayleigh scattering in
+  fiber optic cables,'' in {\em Imaging and Applied Optics, OSA Technical
+  Digest (online)}, Optica Publishing Group, 2013.
+
+\bibitem{liu2023convnextv2}
+Z.~Liu, H.~Mao, C.-Y. Wu, C.~Feichtenhofer, T.~Darrell, and S.~Xie, ``Convnext
+  v2: Co-designing and scaling convnets with masked autoencoders.'' arXiv
+  preprint arXiv:2301.00808, 2023.
+
+\bibitem{tan2019efficientnet}
+M.~Tan and Q.~V. Le, ``Efficientnet: Rethinking model scaling for convolutional
+  neural networks,'' {\em Proceedings of the 36th International Conference on
+  Machine Learning (ICML)}, pp.~6105--6114, 2019.
+
+\bibitem{masoudi}
+A.~Masoudi, J.~H. Snook, T.~Lee, M.~Beresna, and G.~Brambilla, ``Application of
+  ultra low-loss enhanced backscattering fiber in high spatial resolution
+  distributed acoustic sensors,'' in {\em 27th International Conference on
+  Optical Fiber Sensors, Technical Digest Series (Optica Publishing Group)},
+  2022.
+
+\bibitem{chandni}
+K.~Chandni, A.~P. Singh, A.~K. Rai, and A.~S. Chauhan, ``Image recognition
+  using machine learning techniques,'' in {\em 2023 International Conference on
+  Sustainable Emerging Innovations in Engineering and Technology (ICSEIET)},
+  (Ghaziabad, India), pp.~347--350, 2023.
+
+\bibitem{PyTorch_website}
+{PyTorch}, {\em Get Started Locally}.
+\newblock PyTorch, 2024.
+\newblock Available on the PyTorch official website. Accessed: 2025-04-04.
+
+\bibitem{pytorch}
+A.~Paszke, S.~Gross, F.~Massa, A.~Lerer, J.~Bradbury, G.~Chanan, T.~Killeen,
+  Z.~Lin, N.~Gimelshein, L.~Antiga, A.~Desmaison, A.~K{\"o}pf, E.~Yang,
+  Z.~DeVito, M.~Raison, A.~Tejani, S.~Chilamkurthy, B.~Steiner, L.~Fang, and
+  S.~Chintala, ``Pytorch: An imperative style, high-performance deep learning
+  library.'' arXiv preprint arXiv:1912.01703, 2019.
+
+\bibitem{Efficacy}
+Encord, ``Classification metrics: Accuracy, precision, recall.''
+  \url{https://encord.com/blog/classification-metrics-accuracy-precision-recall/},
+  2023.
+\newblock Accessed: 2023-10-05.
+
+\bibitem{Augmentation}
+C.~Shorten and T.~M. Khoshgoftaar, ``A survey on image data augmentation for
+  deep learning,'' {\em Journal of Big Data}, vol.~6, no.~60, 2019.
+
+\bibitem{torchvision2024}
+{PyTorch Vision Developers}, ``{torchvision}: Datasets, transforms, and models
+  for computer vision.'' \url{https://pytorch.org/vision/}, 2024.
+\newblock Accessed: 2025-05-01.
+
+\bibitem{kornia}
+E.~Riba, D.~Mishkin, J.~Shi, D.~Ponsa, F.~Moreno-Noguer, and G.~Bradski, ``A
+  survey on kornia: an open source differentiable computer vision library for
+  pytorch,'' in {\em Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition Workshops (CVPRW)}, 2020.
+
+\bibitem{ekimov2007ultrasonic}
+A.~Ekimov and J.~M. Sabatier, ``Ultrasonic wave generation due to human
+  footsteps on the ground,'' {\em J. Acoust. Soc. Am.}, vol.~121, no.~3,
+  pp.~EL114--EL119, 2007.
+
+\bibitem{ks2021acoustic}
+K.~S, D.~D, S.~D, I.~M, C.~E, and R.~P, ``Acoustic based footstep detection in
+  pervasive healthcare,'' {\em Annu Int Conf IEEE Eng Med Biol Soc},
+  pp.~4974--4977, 2021.
+
+\bibitem{footstep}
+S.~Jakkampudi, J.~Shen, W.~Li, A.~Dev, T.~Zhu, and E.~Martin, ``Footstep
+  detection in urban seismic data with a convolutional neural network,'' {\em
+  The Leading Edge}, vol.~39, pp.~654--660, 09 2020.
+
+\bibitem{zhou2024large}
+Y.~Zhou, J.~K. Yeoh, Y.~E. Li, and W.~Solihin, ``Large scale indoor occupant
+  tracking using distributed acoustic sensing and machine learning,'' {\em
+  Building and Environment}, vol.~247, p.~111005, 2024.
+
+\bibitem{bublin2021event}
+M.~Bublin, ``Event detection for distributed acoustic sensing: Combining
+  knowledge-based, classical machine learning, and deep learning approaches,''
+  {\em Sensors}, vol.~21, no.~22, p.~7527, 2021.
+
+\bibitem{Shi2025Benchmark}
+Y.~Shi and J.~Zong, ``Benchmarking machine learning architectures for
+  distributed acoustic sensing footstep detection,'' {\em IEEE Sensors
+  Journal}, vol.~25, no.~5, pp.~1234--1245, 2025.
+
+\bibitem{Yadav2021Contrastive}
+A.~Yadav, S.~Kumar, and T.~Lee, ``Contrastive multimodal embeddings for
+  footstep recognition with das and geophones,'' in {\em Proc.\ ACM Int.\
+  Conf.\ on Embedded Sensor Systems (EmSys)}, pp.~67--78, 2021.
+
+\bibitem{hdf5}
+{The HDF Group}, {\em {HDF5} -- Data Model, Library, and File Format}, 2024.
+\newblock Accessed: 2025-05-26.
+
+\bibitem{mckinney2010data}
+W.~McKinney, ``Data structures for statistical computing in python,'' {\em
+  Proceedings of the 9th Python in Science Conference}, pp.~51--56, 2010.
+
+\bibitem{hunter2007matplotlib}
+J.~D. Hunter, ``Matplotlib: A 2d graphics environment,'' {\em Computing in
+  Science \& Engineering}, vol.~9, no.~3, pp.~90--95, 2007.
+
+\bibitem{Labelme}
+K.~Wada, ``Labelme starter guide.'' Available at
+  \url{https://labelme.io/docs/install-labelme-pip}, 2024.
+\newblock Accessed: 2025-04-04.
+
+\bibitem{scipy2020}
+P.~Virtanen, R.~Gommers, T.~E. Oliphant, M.~Haberland, T.~Reddy, D.~Cournapeau,
+  E.~Burovski, P.~Peterson, W.~Weckesser, J.~Bright, S.~J. van~der Walt,
+  M.~Brett, J.~Wilson, K.~J. Millman, N.~Mayorov, A.~R.~J. Nelson, E.~Jones,
+  R.~Kern, E.~Larson, C.~J. Carey, Ä.~Polat, Y.~Feng, E.~W. Moore,
+  J.~VanderPlas, D.~Laxalde, J.~Perktold, R.~Cimrman, I.~Henriksen, E.~A.
+  Quintero, C.~R. Harris, A.~M. Archibald, A.~H. Ribeiro, F.~Pedregosa, P.~van
+  Mulbregt, A.~Vijaykumar, A.~P. Bardelli, A.~Rothberg, A.~Hilboll,
+  A.~Kloeckner, A.~Scopatz, A.~Lee, A.~Rokem, A.~Woods, A.~R. Fulton, C.~E.
+  Masson, C.~H{\"a}ggstr{\"o}m, C.~Fitzgerald, C.~Nicholson, C.~Hagen,
+  D.~Pasechnik, E.~Olivetti, E.~W. Martin, E.~Wieser, F.~Silva, F.~Lenders,
+  F.~Wilhelm, F.~Young, F.~Price, F.~Ingold, F.~Allen, G.~R. Lee, G.~Audren,
+  G.~Probst, H.~Dietrich, H.~Silterra, J.~T. Webber, J.~Slavic, J.~Nothman,
+  J.~Buchner, J.~Kulick, J.~L. Sch{\"o}nberger, J.~V. de~Miranda~Cardoso,
+  J.~Reimer, J.~Harrington, J.~H. Rodr{'\i}guez, J.~Nunez-Iglesias,
+  J.~Kuczynski, Y.~Vazquez-Baeza, and S.~. Contributors, ``{SciPy} 1.0:
+  Fundamental algorithms for scientific computing in {Python},'' {\em Nature
+  Methods}, vol.~17, pp.~261--272, 2020.
+
+\bibitem{torchaudio2024}
+{PyTorch Audio Developers}, ``{torchaudio}: Audio and signal processing in
+  pytorch.'' \url{https://pytorch.org/audio/}, 2024.
+\newblock Accessed: 2025-05-01.
+
+\bibitem{rw2019timm}
+R.~Wightman, ``Pytorch image models.'' GitHub repository,
+  \url{https://github.com/huggingface/pytorch-image-models}, 2019.
+
+\bibitem{torchmetrics}
+{Lightning AI}, ``Torchmetrics: Modular metrics for pytorch.'' GitHub
+  repository, 2021.
+\newblock Accessed: 2025-05-26.
+
+\bibitem{pyyaml}
+C.~Evans, I.~d{\"o}t Net, and O.~Ben-Kiki, ``{YAML Ain't Markup Language (YAML)
+  Version 1.2} specification.'' \url{https://yaml.org/spec/1.2/spec.html},
+  2009.
+\newblock Accessed: 2025-05-26.
+
+\end{thebibliography}

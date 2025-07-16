@@ -1,0 +1,30 @@
+%
+% Zusammenfassung.tex
+%
+
+% =========================================
+% Zusammenfassung
+% =========================================
+
+% Die �berschriften der Zusammenfassung und des Abstract werden
+% nicht als \chapter angelegt, sondern lediglich als gro�er,
+% fettgedruckter Text. Dadurch wird zum einen verhindert, dass
+% die Zusammenfassung ins Inhaltsverzeichnis aufgenommen wird,
+% zum anderen wird die Seite besser ausgenutzt (Zusammenfassung
+% und Abstract sollten eine Seite nicht �bersteigen).
+
+%\addchap{Zusammenfassung}
+
+					% Leerraum zwischen Zusammenfassung und Abstract
+
+% Englische �bersetzung der Zusammenfassung
+
+\begin{Large}
+\textsf{\textbf{Abstract}}\\
+\end{Large}
+
+
+Perimeter monitoring is a cornerstone of security and surveillance. Distributed Acoustic Sensing (DAS) turns miles of optical fiber into a continuous, high-resolution microphone that captures tiny ground vibrations in real time. With recent developments in machine learning, never before seen new possibilities emerged to train models detecting and distinguishing between individual human activities based on DAS phase data. In this work, we present an internally developed Spectrogram Classifier framework at AP Sensing. First, it transforms the raw DAS phase into  time frequency images (spectrograms), then feeds them into two modern vision networks (ConvNeXt V2 and EfficientNet). We compare two setups: one where the system listens on a single channel for under two seconds, and another where it uses ten channels over two seconds. On the ten-channel recordings, both models top 99\% accuracy and produce almost no false alarms. By contrast, the one-channel setup drops to about 88\% accuracy and fires off many more spurious alerts. This clear gap shows that giving the model a richer spatial picture (ten channels) dramatically boosts reliability. By combining GPU-accelerated preprocessing with these proven backbones, our pipeline moves from a lab prototype to a field-ready perimeter-monitoring tool.
+
+
+

@@ -1,0 +1,23 @@
+%
+%
+% header.tex
+%
+
+\documentclass[
+	paper = a4,							% A4 Papier
+	BCOR10mm,							% Bindekorrektur
+%	DIVcalc,							%	DIV-Wert fuer die Erstellung des Satzspiegels, siehe scrguide
+	twoside = false,							% Layout für einseitigen Druck
+  1.4headlines,				% Manuelle Vergrößerung der Kopfzeile. Standardwert 1.25 Zeilen
+  openany,             	% Kapitel können auf geraden und ungeraden Seiten beginnen	
+	bibliography=totoc, 	% Literaturverzeichnis ins Inhaltsverzeichnis aufnehmen
+	version=first,
+	listof=totoc,					% Tabellen- und Abbildungsverzeichnis ins Inhaltsverzeichnis aufnehmen
+	index=totoc,					% Index ins Inhaltsverzeichnis aufnehmen
+  headinclude,         	% Kopfzeile wird in Seiten-Layouts mit beruecksichtigt
+  %footinclude,        	% Fusszeile wird in Seiten-Layouts mit beruecksichtigt
+	parskip = half,					% Europäischer Satz mit Abstand zwischen Absätzen
+	chapterprefix = false,   		% "Kapitel" nicht in Kapitl
+	fontsize = 12pt,									% Schriftgröße 12pt                 
+	headings = normal,				% kleinere Überschriften
+]{scrreprt}

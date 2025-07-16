@@ -1,0 +1,66 @@
+
+% ======================
+% Einbinden von Packages
+% ======================
+
+% Layout
+\usepackage{a4}									% Ausgabeformat
+\usepackage{lastpage}						% Referenz auf letzte Seite des Dokuments verfügbar
+\usepackage{lscape}							% Querformat einer Seite durch den Aufruf \begin{landscape}
+\usepackage{rotating}						% Drehen von Gleitobjekten 
+
+% Spracheinstellungen
+\usepackage[ngerman]{babel}    	% neue deutsche Rechtschreibung, deutsche Spracheinstellungen
+\usepackage[ansinew]{inputenc}  % direkte Eingabe von Umlauten über Tastatur
+\usepackage[T1]{fontenc}				% direkte Eingabe von Umlauten über Tastatur
+
+
+% Schriften
+\usepackage{helvet}         		% Helvetica als serifenlose Schriftart verwenden
+\usepackage[bf]{caption}    		% Formatierung von Tabellen- und Bildbeschriftungen
+\usepackage{verbatim}						% Ausgabe des Textes wie im Editor dargestellt, Tex-Direktiven werden nicht berücksichtigt
+%\setkomafont{sectioning}{\normalfont\bfseries} % Kapitelüberschriften mit Serifen
+\setkomafont{sectioning}{\sffamily\bfseries} % Kapitelüberschriften ohne Serifen
+\setkomafont{captionlabel}{\normalfont\bfseries}
+\setkomafont{descriptionlabel}{\normalfont\bfseries}
+
+
+% Grafiken
+\usepackage{graphics}						% Standardgrafikpaket
+\usepackage{graphicx} 					% Erweiterete Grafikoptionen
+\usepackage{subfigure}					% Unterabbildungen zulassen
+\usepackage{epsfig}							% Einbinden von Grafiken
+\usepackage{psfrag}    					% Einfügen von Latex-Schriften in eps-Bilder
+% \usepackage{tikz}								% Package zum Zeichnen von Grafiken
+% \usepackage{pgfplots}						% Package zum Zeichnen von Plots, greift auf tikz zu
+\usepackage{epstopdf}		% wird nur mit PDFLatex benötigt, damit auch eps-Bilder verwendet werden können
+
+% Paket zum Erweitern der Tabelleneigenschaften
+\usepackage{array}							% erweiterte Einstellmöglichkeiten für Spaltenformate
+\usepackage{dcolumn}						% Ausrichtung des Dezimalpunktes
+\usepackage{multirow}						% mehrere Zeilen zusammefassen
+\usepackage{tabularx}   				% Erweiterte Tabellen Optionen
+\usepackage{booktabs}						% normgerechte Tabellen
+\usepackage{longtable}					% Mehrseitige Tabellen
+
+% Formeln
+\usepackage{amsmath}    				% Mathematik-Modus
+\usepackage{amsfonts}						% Schriftarten für Mathematik-Modus
+% \usepackage{dsfont}							% Zahlenmengen-Schriftart
+\usepackage{amssymb}    				% Symbole für Mathematik-Modus
+\usepackage{wasysym}						% >>,<<,approx
+\usepackage{upgreek}						% nichtkursive griechische Buchstaben
+% \usepackage{trfsigns}						% Transformationssymbole
+
+% Aufzählung
+\usepackage{mdwlist} 						% Aufzählung unterbrechen mit suspend{enumerate} und resume{enumerate}
+\usepackage{paralist}						% Verwendung von unterschiedichen Zeichen in einer Aufzählung
+
+
+% Sonstiges
+\usepackage{ifthen}							% Abfragen und bedingte Formatierung
+
+
+\usepackage{xspace}    					% für Leerzeichen in Mathe
+ 
+\usepackage{bibgerm}						% Literaturverzeichnis

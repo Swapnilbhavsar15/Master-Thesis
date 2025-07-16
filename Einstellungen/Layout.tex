@@ -1,0 +1,35 @@
+% ---------------------------------------------------------------------------
+% Kopf- und Fußzeile
+% ---------------------------------------------------------------------------
+
+\usepackage[headsepline,plainheadsepline,footsepline,plainfootsepline]{scrlayer-scrpage} 
+% Hierbei handelt es sich um ein Paket zur Kontrolle von Kopf- und Fußzeile.
+% Nähere Informationen finden sich in der Dokumentation zum KOMA-Skript.
+
+\pagestyle{scrheadings}				% Seitenstil des Pakets scrpage2 laden
+
+% Löschen der voreingestellten Stile
+\clearscrheadings							% Löschen des voreingestellten Stils für Folgeseiten
+\clearscrplain								% Löschen des voreingestellten Stils für erste Seite eines Kapitels
+
+% Anordnung der Daten in der Kopfzeile:
+% [erste Kapitelseite]{Folgeseiten}
+\lohead[\headmark]{\headmark}	% Kapitelname in der Kopfzeile links einfügen
+%\rohead[\pagemark]{\pagemark}	% Seitenzahl in der Kopfzeile rechts einfügen
+
+% Layout der Fußzeile laden und setzen
+% Erstellung der Fußzeile in einer Box.
+\newsavebox{\footer}
+
+
+%\ifoot[\usebox{\footer}]{\usebox{\footer}}
+\cfoot[\pagemark]{\pagemark}
+
+\automark{chapter}						% automatische Aktualisierung der Kapitel in der Kopfzeile
+
+% Trennlinien
+\setheadsepline{.4pt}
+\setfootsepline{.4pt} 		% Voreingestellte Trennlinie für Fußzeile ausblenden
+
+\usepackage{setspace}
+\onehalfspacing

@@ -1,0 +1,17 @@
+default:
+  image:
+    name: texlive/texlive:latest
+  tags:
+    - container
+
+stages:
+  - build
+
+pdf:
+  stage: build
+  script:
+    - make pdf
+  artifacts:
+    paths:
+      - main.pdf
+    expire_in: 1 week

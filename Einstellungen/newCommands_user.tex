@@ -1,0 +1,206 @@
+% Stand: 10.07.2009
+% Formatierung in Formeln
+\newcommand{\A}[0]{\,\mathrm{A}}															% A-Ampere
+\newcommand{\abl}[2]{\frac{\diff{#1}}{\diff{#2}}}							% Ableitung
+\newcommand{\Akompl}[0]{\underline{A}}												% A komplex
+\newcommand{\const}[0]{\mbox{\it const.}}											% const.
+\newcommand{\dB}[0]{\,\mathrm{dB}}														% dB
+\newcommand{\dBm}[0]{\,\mathrm{dBm}}													% dBm
+\newcommand{\dBDek}[0]{\,\frac{\mathrm{dB}}{\mathrm{Dekade}}}	% dB/Dekade
+\newcommand{\diff}[0]{\mathrm{d}}															% Aufrechtes d für Differentialoperator
+\newcommand{\dt}[0]{\mathrm{\diff}t}													% Aufrechtes d t für Differentialoperator
+\renewcommand{\Im}[0]{\mathrm{Im}}														% Imaginärteil
+\newcommand{\ind}[1]{_\mathrm{#1}}														% Index aufrecht
+\renewcommand{\j}[0]{\mathrm{j}}															% Aufrechtes j für imaginäre Einheit
+\newcommand{\kompl}[1]{\underline{#1}}												% komplexe Größe
+\newcommand{\mA}[0]{\,\mathrm{mA}}														% mA
+\newcommand{\mS}[0]{\,\mathrm{mS}}														% mA
+\newcommand{\ra}[0]{\rightarrow}														  % Pfeil nach rechts
+\renewcommand{\Re}[0]{\mathrm{Re}}														% Realteil
+\newcommand{\ul}[1]{\underline{#1}}														% Unterstreichung
+\renewcommand{\unit}[1]{\,\mathrm{#1}}													% Einheiten aufrecht und Abstand zur Zahl
+\newcommand{\Ohm}[0]{\,\mathrm{\Omega}}												% Einheit Ohm
+\newcommand{\V}[0]{\,\mathrm{V}}															% V-Volt
+
+% häufige Größen - Lateinische Buchstaben
+\newcommand{\AD}[0]{\underline{A}_{\mathrm{D}}}					% A_D
+\newcommand{\CD}[0]{C_{\mathrm{D}}}			 										% C_D
+\newcommand{\CDS}[0]{C_{\mathrm{DS}}}		 										% C_DS
+\newcommand{\CF}[0]{C_{\mathrm{F}}}											% C_F
+\newcommand{\CG}[0]{C_{\mathrm{G}}}			 										% C_G
+\newcommand{\CGS}[0]{C_{\mathrm{GS}}}		 										% C_GS
+\newcommand{\Cp}[0]{C_{\mathrm{p}}}			 										% C_p
+\newcommand{\CPar}[0]{C_{\mathrm{\text{parasitär}}}}				% C_Par
+\newcommand{\Cres}[0]{C_{\mathrm{r}}}												% C_res
+\newcommand{\DS}[0]{\Delta\Sigma}														% Delta Sigma
+\newcommand{\f}[1]{f_{\mathrm{#1}}}												 	% f_0
+\newcommand{\favg}[0]{f_{\mathrm{avg}}}											% f_avg
+\newcommand{\fg}[0]{f_{\mathrm{g}}}												 	% f_g
+\newcommand{\Fjw}[0]{\underline{F}(\mathrm{j}\omega)}				% F(jw)
+\newcommand{\Fkompl}[0]{\underline{F}}										 	% F komplex
+\newcommand{\fm}[0]{f_{\mathrm{m}}}													% f_m 
+\newcommand{\fN}[0]{f_{\mathrm{N}}}													% f_N 
+\newcommand{\fo}[0]{f_{\mathrm{0}}}													% f_o 
+\newcommand{\fRes}[0]{f_{\mathrm{Res}}}									% f_Res Auflösung
+\newcommand{\fs}[0]{f_{\mathrm{s}}}													% f_s 
+\newcommand{\fT}[0]{f_{\mathrm{T}}}													% f_T  
+\newcommand{\gm}[0]{g_{\mathrm{m}}}												 	% g_m
+\newcommand{\Hkompl}[0]{\underline{H}}										 	% H komplex
+\newcommand{\iC}[0]{i_{\mathrm{C}}}													% i_C
+\newcommand{\IDC}[0]{I_{\mathrm{DC}}}												% I_DC
+\newcommand{\IDCI}[0]{I_{\mathrm{DC1}}}											% I_DC1
+\newcommand{\IDCII}[0]{I_{\mathrm{DC2}}}										% I_DC2
+\newcommand{\iDI}[0]{i_{\mathrm{D1}}}												% i_D1
+\newcommand{\iDII}[0]{i_{\mathrm{D2}}}											% i_D2
+\newcommand{\iDS}[0]{i_{\mathrm{DS}}}												% i_DS
+\newcommand{\Ikompl}[0]{\underline{I}}			 								% I komplex
+\newcommand{\iL}[0]{i_{\mathrm{L}}}													% i_L
+\newcommand{\Imax}[0]{I_{\mathrm{max}}}											% I_max
+\newcommand{\iR}[0]{i_{\mathrm{R}}}													% i_R
+\newcommand{\ir}[0]{i_{\mathrm{r}}}													% i_r
+\newcommand{\IrI}[0]{I_{\mathrm{r,1}}}											% I_r,1
+\newcommand{\irI}[0]{i_{\mathrm{r,1}}}											% i_r,1
+\newcommand{\LDS}[0]{L_{\mathrm{DS}}}												% L_DS
+\newcommand{\LG}[0]{L_{\mathrm{G}}}			 										% L_G
+\newcommand{\Lres}[0]{L_{\mathrm{r}}}												% L_res
+\newcommand{\LI}[0]{L_{\mathrm{1}}}													% L_I
+\newcommand{\LII}[0]{L_{\mathrm{2}}}												% L_II
+\newcommand{\PDC}[0]{P_{\mathrm{DC}}}												% P_DC
+\newcommand{\Pout}[0]{P_{\mathrm{out}}}											% P_out
+\newcommand{\Poutpk}[0]{P_{\mathrm{out,pk}}}								% P_out,pk
+\newcommand{\PVC}[0]{P_{\mathrm{V,C}}}											% P_V,C
+\newcommand{\PVG}[0]{P_{\mathrm{V,G}}}											% P_V,G
+\newcommand{\PVK}[0]{P_{\mathrm{V,K}}}											% P_V,K
+\newcommand{\PVL}[0]{P_{\mathrm{V,L}}}											% P_V,L
+\newcommand{\PVR}[0]{P_{\mathrm{V,R}}}											% P_V,R
+\newcommand{\PVT}[0]{P_{\mathrm{V,\uptau}}}									% P_V,tau
+\newcommand{\RA}[0]{R_{\mathrm{A}}}			 										% R_A
+\newcommand{\RDS}[0]{R_{\mathrm{DS}}}												% R_DS
+\newcommand{\RDSon}[0]{R_{\mathrm{DS,on}}}									% R_DS,on
+\newcommand{\RG}[0]{R_{\mathrm{G}}}			 										% R_G
+\newcommand{\RL}[0]{R_{\mathrm{L}}}													% R_L
+\newcommand{\Ropt}[0]{R_{\mathrm{opt}}}											% R_opt
+\newcommand{\RoptF}[0]{R_{\mathrm{opt,50\ \%}}}							% R_opt,50
+\newcommand{\RS}[0]{R_{\mathrm{S}}}													% R_S
+%\newcommand{\si}[0]{\mathrm{si}}														% si
+\newcommand{\SNR}[0]{\mathrm{SNR}} 													% SNR
+\newcommand{\TA}[0]{T_{\mathrm{A}}}													% T_A
+\newcommand{\TB}[0]{T_\mathrm{B}} 													% T_B 
+\newcommand{\tf}[0]{t_{\mathrm{f}}}													% t_f
+\newcommand{\THi}[0]{T_{\mathrm{H}}}												% T_H
+\newcommand{\Ti}[0]{T_{\mathrm{i}}}													% T_H
+\newcommand{\TLo}[0]{T_{\mathrm{L}}}												% T_L
+\newcommand{\tr}[0]{t_{\mathrm{r}}}													% t_r
+\newcommand{\TS}[0]{T_{\mathrm{S}}}													% T_S
+\newcommand{\To}[0]{T_{\mathrm{0}}}													% T_0
+\newcommand{\uAII}[0]{u_{\mathrm{A2}}}											% u_A2
+\newcommand{\uAI}[0]{u_{\mathrm{A1}}}												% u_A1
+\newcommand{\UBE}[0]{U_{\mathrm{BE}}}												% U_BE
+\newcommand{\UC}[0]{\underline{U}_{\mathrm{C}}}							% U_C komplex
+\newcommand{\uC}[0]{u_{\mathrm{C}}}													% u_C
+\newcommand{\UCC}[0]{U_{\mathrm{CC}}}												% U_CC
+\newcommand{\UDC}[0]{U_{\mathrm{DC}}}												% u_DC
+\newcommand{\uDI}[0]{u_{\mathrm{D1}}}												% u_D1
+\newcommand{\uDII}[0]{u_{\mathrm{D2}}}											% u_D2
+\newcommand{\UE}[0]{\underline{U}_{\mathrm{E}}}							% U_E komplex
+\newcommand{\Ue}[0]{\underline{U}_{\mathrm{e}}}							% U_e komplex
+\newcommand{\UEE}[0]{U_{\mathrm{EE}}}												% U_EE
+\newcommand{\uG}[0]{u_{\mathrm{G}}}													% u_G
+\newcommand{\UGS}[0]{U_{\mathrm{GS}}}												% U_GS
+\newcommand{\uGS}[0]{u_{\mathrm{GS}}}												% u_GS
+\newcommand{\UH}[0]{U_{\mathrm{H}}}													% U_H
+\newcommand{\UK}[0]{U_{\mathrm{K}}}													% U_K
+\newcommand{\Ukompl}[0]{\underline{U}}										 	% U komplex
+\newcommand{\uL}[0]{u_{\mathrm{L}}}													% u_L
+\newcommand{\Umax}[0]{U_{\mathrm{max}}}											% U_max
+\newcommand{\Uout}[0]{U_{\mathrm{out}}}											% U_out
+\newcommand{\Uoutpk}[0]{U_{\mathrm{out,pk}}}								% U_out,pk
+\newcommand{\uout}[0]{u_{\mathrm{out}}}											% u_out
+\newcommand{\uR}[0]{u_{\mathrm{R}}}													% u_R
+\newcommand{\URkompl}[0]{\underline{U}_{\mathrm{R}}}			 	% U_R komplex
+\newcommand{\Vkompl}[0]{\underline{V}}										 	% V komplex
+\newcommand{\Ykompl}[0]{\underline{Y}}											% Y_Zahl komplex
+\newcommand{\ZA}[0]{\underline{Z}_{\mathrm{A}}}							% Z_A komplex
+\newcommand{\Za}[0]{\underline{Z}_{\mathrm{a}}}							% Z_a komplex
+\newcommand{\ZE}[0]{\underline{Z}_{\mathrm{E}}}							% Z_E komplex
+\newcommand{\Ze}[0]{\underline{Z}_{\mathrm{e}}}							% Z_e komplex
+\newcommand{\Zkompl}[0]{\underline{Z}}										 	% Z komplex
+\newcommand{\ZW}[0]{\underline{Z}_{\mathrm{W}}}							% Z_T komplex
+\newcommand{\ZT}[0]{\underline{Z}_{\mathrm{T}}}							% Z_T komplex
+
+
+% Stand: 17.12.2008
+% häufige Größen - Griechische Buchstaben
+\newcommand{\etaBP}[0]{\eta_{\mathrm{BP}}}									% eta_BP
+\newcommand{\etaC}[0]{\eta_{\mathrm{C}}}										% eta_C
+\newcommand{\etaCode}[0]{\eta_{\mathrm{Code}}}							% eta_Code
+\newcommand{\etaD}[0]{\eta_{\mathrm{D}}}										% eta_D
+\newcommand{\etaK}[0]{\eta_{\mathrm{K}}}										% eta_K
+\newcommand{\etaL}[0]{\eta_{\mathrm{L}}}										% eta_L
+\newcommand{\etaR}[0]{\eta_{\mathrm{R}}}										% eta_R
+\newcommand{\etaRon}[0]{\eta_{\mathrm{R,on}}}								% eta_Ron
+\newcommand{\etasim}[0]{\eta_{\mathrm{sim}}}								% eta_sim
+\newcommand{\etaT}[0]{\eta_{\mathrm{\uptau}}}								% eta_tau
+\newcommand{\w}[1]{\omega_{#1}}															% omega_0
+\newcommand{\wg}[0]{\omega_{\mathrm{g}}}										% omega_g
+
+
+% Stand: 17.12.2008
+% Abkürzungen
+\renewcommand{\dh}{\mbox{d.\,h.}\xspace}					% das heißt / bereits vergeben
+\newcommand{\iA}{\mbox{i.\,A.}\xspace}						% im Auftrag
+\newcommand{\iAllg}{\mbox{i.\,Allg.}\xspace}			% im Allgemeinen
+\newcommand{\ua}{\mbox{u.\,a.}\xspace}						% und andere
+\newcommand{\zB}{\mbox{z.\,B.}\xspace}						% zum Beispiel
+
+	
+% ====== Definition Spannungs-/Strompfeile ======
+
+% Voltage Arrow between two nodes, arguments:
+% positive node, negative node, label pos (left, right, above, below),
+% label, (optional: length by which arrow is shortened at each end)
+\newcommand{\voltageA}[5][3mm]{
+  \draw[->, shorten >= #1, shorten <= #1] (#2) -- (#3) node[midway, #4] {#5} ;
+}
+
+% Voltage Arrow next to circuit element, arguments:
+% positive node, negative node, label pos, label, half arrow length,
+% distance between arrow and circuit element
+\newcommand{\voltageB}[6]{
+  \coordinate (node_middle) at ($(#1)!0.5!(#2)$);
+  \ifthenelse{\equal{#3}{above}}{
+    \path (node_middle) + (-#5,#6) coordinate (A+) + (#5,#6) coordinate (A-);
+  }{}
+  \ifthenelse{\equal{#3}{below}}{
+    \path (node_middle) + (-#5,-#6) coordinate (A+) + (#5,-#6) coordinate (A-);
+  }{}
+  \ifthenelse{\equal{#3}{left}}{
+    \path (node_middle) + (-#6,#5) coordinate (A+) + (-#6,-#5) coordinate (A-);
+  }{}
+  \ifthenelse{\equal{#3}{right}}{
+    \path (node_middle) + (#6,#5) coordinate (A+) + (#6,-#5) coordinate (A-);
+  }{}
+  \draw[->] (A+) -- (A-) node[midway, #3] {#4};
+}
+
+% Current Arrow next to a given node, arguments:
+% node, label pos, label, length of arrow, distance arrow/wire,
+% length of shift parallel to wire
+\newcommand{\currentA}[6]{
+  \ifthenelse{\equal{#2}{above}}{
+    \path (#1) ++ (#6,#5) coordinate (A+) ++ (#4,0) coordinate (A-);
+  }{}
+  \ifthenelse{\equal{#2}{below}}{
+    \path (#1) ++ (#6,-#5) coordinate (A+) ++ (#4,0) coordinate (A-);
+  }{}
+  \ifthenelse{\equal{#2}{left}}{
+    \path (#1) ++ (-#5,-#6) coordinate (A+) ++ (0,-#4) coordinate (A-);
+  }{}
+  \ifthenelse{\equal{#2}{right}}{
+    \path (#1) ++ (#5,-#6) coordinate (A+) ++ (0,-#4) coordinate (A-);
+  }{}
+  \draw[->] (A+) -- (A-) node[midway, #2] {#3};
+}
+
+
+

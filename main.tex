@@ -1,0 +1,136 @@
+%
+% main.tex
+%
+
+% ===========================================================================
+% Dokumenteneinstellungen laden
+% ===========================================================================
+
+% Dokumentheader
+\documentclass[
+	paper = a4,							% A4 Papier
+	BCOR10mm,							% Bindekorrektur
+%	DIVcalc,							%	DIV-Wert fuer die Erstellung des Satzspiegels, siehe scrguide
+	twoside = false,							% Layout f�r einseitigen Druck
+  1.4headlines,				% Manuelle Vergr��erung der Kopfzeile. Standardwert 1.25 Zeilen
+  openany,             	% Kapitel k�nnen auf geraden und ungeraden Seiten beginnen	
+	bibliography=totoc, 	% Literaturverzeichnis ins Inhaltsverzeichnis aufnehmen
+	version=first,
+	listof=totoc,					% Tabellen- und Abbildungsverzeichnis ins Inhaltsverzeichnis aufnehmen
+	index=totoc,					% Index ins Inhaltsverzeichnis aufnehmen
+  headinclude,         	% Kopfzeile wird in Seiten-Layouts mit beruecksichtigt
+  %footinclude,        	% Fusszeile wird in Seiten-Layouts mit beruecksichtigt
+	parskip = half,					% Europ�ischer Satz mit Abstand zwischen Abs�tzen
+	chapterprefix = false,   		% "Kapitel" nicht in Kapitl
+	fontsize = 12pt,									% Schriftgr��e 12pt                 
+	headings = normal,				% kleinere �berschriften
+]{scrreprt}
+
+% pers�nliche Daten m�ssen in dem File @"Einstellungen/Labels"  eingetragen werden
+\input{Einstellungen/Labels}
+
+% PDF Optionen laden, Das Laden dieser Optionen wurde aus der Pr�ambel herausgenommen, da folgender Fehler auftrat: "`tex capacity exceeded save size=5000"'. Die Probleml�sung wird im Internet beschrieben. Knackpunkt: \onehalfspacing (in Pr�ambel) muss nach den pdf Optionen stehen.
+% \include{Einstellungen/PdfOptions}
+
+% Einstellungen des Dokumentes importieren
+\include{Einstellungen/Praeambel}
+
+\include{Einstellungen/Layout}
+
+% neue Befehle importieren
+\input{Einstellungen/newCommands}
+\input{Einstellungen/newCommands_user}
+\input{Einstellungen/psfrag}						% Laden h�ufiger Abk�rzungen  in EPS Grafiken
+
+% Trennungsregeln laden
+\input{Einstellungen/Trennungsliste}
+
+% ===========================================================================
+% Beginn des Dokumentes
+% ===========================================================================
+\begin{document}
+
+
+% ---------------------------------------------------------------------------
+% Titelseite, Verzeichnisse 
+% ---------------------------------------------------------------------------
+
+% r�mische Nummerierung der Seiten f�r die Verzeichnisse
+\pagenumbering{Roman}
+
+% Titelseite
+\include{Kapitel/Titel} % Titelseite f�r studentische Arbeiten
+
+% Seitennummerierung auf der zweiten Seite beginnen
+\setcounter{page}{1}
+
+% Zusammenfassung in deutscher und englischer Sprache
+\include{Kapitel/Kapitel_Zusammenfassung}
+
+% Inhaltsverzeichnis
+\tableofcontents
+
+% Abk�rzungen und Formelzeichen
+\include{Verzeichnis/Formelzeichen}
+
+% Abbildungsverzeichnis
+% wird normalerweise nicht verwendet
+\cleardoublepage
+\listoffigures
+
+
+%	Tabellenverzeichnis
+% wird normalerweise nicht verwendet
+\cleardoublepage
+\lstlistoflistings
+
+
+% Aufgabenstellung
+\include{Kapitel/Kapitel_Aufgabenstellung}
+
+% ---------------------------------------------------------------------------
+%	Hauptteil
+% ---------------------------------------------------------------------------
+% arabische Numerrierung der Seiten des Hauptteils
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% Kapitel einbinden
+\include{Kapitel/Kapitel_1}
+\include{Kapitel/Kapitel_2}
+\include{Kapitel/Kapitel_3}
+\include{Kapitel/Kapitel_4}
+\include{Kapitel/Kapitel_5}
+\include{Kapitel/Kapitel_6}
+
+
+% ---------------------------------------------------------------------------
+% Anhang
+% ---------------------------------------------------------------------------
+
+% ---------------------------------------------------------------------------
+% Verzeichnisse einbinden
+% ---------------------------------------------------------------------------
+
+% Literaturangaben aus der .bib-Datei ins Literaturverzeichnis aufnehmen,
+% auch wenn sie im Text nicht zitiert werden.
+% (nicht �blich)
+%\nocite{*}
+
+% Literaturverzeichnis
+\include{Verzeichnis/Verzeichnis_Literatur}
+
+% Erkl�rung
+\include{Kapitel/Kapitel_Erklaerung}
+
+% Stichwortverzeichnis einbinden
+%\printindex
+
+
+\end{document}
+
+% latex main.tex
+% dvips -o main.ps main.dvi
+% ps2pdf -dPDFSETTINGS=/prepress main.ps main.pdf
+% 
+% latex main.tex; dvips -o main.ps main.dvi; ps2pdf -dPDFSETTINGS=/prepress main.ps main.pdf

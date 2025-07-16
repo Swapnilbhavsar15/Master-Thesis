@@ -1,0 +1,114 @@
+\relax 
+\providecommand{\transparent@use}[1]{}
+\providecommand\hyper@newdestlabel[2]{}
+\citation{Labelme}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Implementation}{32}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lol}{\addvspace {10\p@ }}
+\newlabel{ch:implementation}{{4}{32}{Implementation}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Extraction of Footstep and Background Data}{32}{section.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces LabelMe tool for annotation}}{33}{figure.caption.59}\protected@file@percent }
+\newlabel{labelme}{{4.1}{33}{LabelMe tool for annotation}{figure.caption.59}{}}
+\newlabel{lst:core_extraction}{{4.1}{33}{Core logic for extracting samples from a mask}{lstlisting.4.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.1}{\ignorespaces Core logic for extracting samples from a mask}}{33}{lstlisting.4.1}\protected@file@percent }
+\citation{scipy2020}
+\citation{torchaudio2024}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Preprocessing of extracted Data}{35}{section.4.2}\protected@file@percent }
+\newlabel{preproc}{{4.2}{35}{Preprocessing of extracted Data}{section.4.2}{}}
+\newlabel{lst:mag_processing}{{4.2}{36}{Core processing for converting raw phase data to magnitude output}{lstlisting.4.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.2}{\ignorespaces Core processing for converting raw phase data to magnitude output}}{36}{lstlisting.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectrogram for walking data with 1 spatial channel}}{37}{figure.caption.60}\protected@file@percent }
+\newlabel{walking_1ch}{{4.2}{37}{Spectrogram for walking data with 1 spatial channel}{figure.caption.60}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectrogram for walking data with 10 spatial channels}}{38}{figure.caption.61}\protected@file@percent }
+\newlabel{walking_10ch}{{4.3}{38}{Spectrogram for walking data with 10 spatial channels}{figure.caption.61}{}}
+\citation{PyTorch_website}
+\citation{rw2019timm}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Dataset}{39}{section.4.3}\protected@file@percent }
+\newlabel{sec:dataset}{{4.3}{39}{Dataset}{section.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Training and Validation of the Model}{39}{section.4.4}\protected@file@percent }
+\newlabel{lst:data_reading_stats}{{4.3}{40}{Reading data files and computing dataset statistics}{lstlisting.4.3}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.3}{\ignorespaces Reading data files and computing dataset statistics}}{40}{lstlisting.4.3}\protected@file@percent }
+\newlabel{lst:custom_augmentations}{{4.4}{41}{Custom data augmentation modules}{lstlisting.4.4}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.4}{\ignorespaces Custom data augmentation modules}}{41}{lstlisting.4.4}\protected@file@percent }
+\citation{kornia}
+\citation{kornia}
+\citation{PyTorch_website}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Augmentations of the input tensor}}{43}{figure.caption.62}\protected@file@percent }
+\newlabel{aug}{{4.4}{43}{Augmentations of the input tensor}{figure.caption.62}{}}
+\newlabel{lst:binfile_dataset}{{4.5}{44}{Custom Dataset for loading and processing footstep files}{lstlisting.4.5}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.5}{\ignorespaces Custom Dataset for loading and processing footstep files}}{44}{lstlisting.4.5}\protected@file@percent }
+\newlabel{lst:training_setup}{{4.6}{46}{Dataset setup and model initialization}{lstlisting.4.6}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.6}{\ignorespaces Dataset setup and model initialization}}{46}{lstlisting.4.6}\protected@file@percent }
+\newlabel{lst:mixup_data}{{4.7}{47}{MixUp data augmentation function}{lstlisting.4.7}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.7}{\ignorespaces MixUp data augmentation function}}{47}{lstlisting.4.7}\protected@file@percent }
+\newlabel{lst:train_loop}{{4.8}{48}{Core training and validation loop}{lstlisting.4.8}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.8}{\ignorespaces Core training and validation loop}}{48}{lstlisting.4.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Testing of the model}{50}{subsection.4.4.1}\protected@file@percent }
+\newlabel{lst:test_loop}{{4.9}{50}{Model test script}{lstlisting.4.9}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.9}{\ignorespaces Model test script}}{50}{lstlisting.4.9}\protected@file@percent }
+\citation{torchmetrics}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Comparison of training, validation and testing performance}{52}{subsection.4.4.2}\protected@file@percent }
+\newlabel{sec:comp}{{4.4.2}{52}{Comparison of training, validation and testing performance}{subsection.4.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Loss and Accuracy plots for training and validation for ConvNext V2 on dataset-1D}}{53}{figure.caption.63}\protected@file@percent }
+\newlabel{conv_1d_train}{{4.5}{53}{Loss and Accuracy plots for training and validation for ConvNext V2 on dataset-1D}{figure.caption.63}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Test results for the ConvNext V2 model on the dataset-1D}}{53}{table.caption.64}\protected@file@percent }
+\newlabel{conv_1d_test}{{4.1}{53}{Test results for the ConvNext V2 model on the dataset-1D}{table.caption.64}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Loss and Accuracy plots for training and validation for EfficientNet on dataset-1D}}{54}{figure.caption.65}\protected@file@percent }
+\newlabel{eff_1d_train}{{4.6}{54}{Loss and Accuracy plots for training and validation for EfficientNet on dataset-1D}{figure.caption.65}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Test results for the EfficientNet model on dataset-1D}}{54}{table.caption.66}\protected@file@percent }
+\newlabel{eff_1d_test}{{4.2}{54}{Test results for the EfficientNet model on dataset-1D}{table.caption.66}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Loss and Accuracy plots for training and validation for ConvNext V2 with 10 spatial channels and 2 sample length}}{55}{figure.caption.67}\protected@file@percent }
+\newlabel{conv_2d_train}{{4.7}{55}{Loss and Accuracy plots for training and validation for ConvNext V2 with 10 spatial channels and 2 sample length}{figure.caption.67}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces Test results for the ConvNeXt V2 model on the dataset-2D}}{55}{table.caption.68}\protected@file@percent }
+\newlabel{conv_2d_test}{{4.3}{55}{Test results for the ConvNeXt V2 model on the dataset-2D}{table.caption.68}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Loss and Accuracy plots for training and validation for EfficientNet with 10 spatial channels and 2 sample length}}{56}{figure.caption.69}\protected@file@percent }
+\newlabel{eff_2d_train}{{4.8}{56}{Loss and Accuracy plots for training and validation for EfficientNet with 10 spatial channels and 2 sample length}{figure.caption.69}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces Test results for the EfficientNet model on the 2-D dataset}}{57}{table.caption.70}\protected@file@percent }
+\newlabel{eff_2d_test}{{4.4}{57}{Test results for the EfficientNet model on the 2-D dataset}{table.caption.70}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Real-time evaluation Framework}{57}{section.4.5}\protected@file@percent }
+\newlabel{sec:realtime_evaluation}{{4.5}{57}{Real-time evaluation Framework}{section.4.5}{}}
+\newlabel{lst:stft_processing}{{4.10}{58}{Preprocessing for conversion of raw phase data to spectrogram in the framework}{lstlisting.4.10}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.10}{\ignorespaces Preprocessing for conversion of raw phase data to spectrogram in the framework}}{58}{lstlisting.4.10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Dependency Graph of \texttt  {spectrogram\_classifier} module}}{59}{figure.caption.71}\protected@file@percent }
+\newlabel{dg_spectrogram}{{4.9}{59}{Dependency Graph of \texttt {spectrogram\_classifier} module}{figure.caption.71}{}}
+\newlabel{lst:model_rt}{{4.11}{61}{Model evaluation mode in the framework}{lstlisting.4.11}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {4.11}{\ignorespaces Model evaluation mode in the framework}}{61}{lstlisting.4.11}\protected@file@percent }
+\@setckpt{Kapitel/Kapitel_4}{
+\setcounter{page}{63}
+\setcounter{equation}{0}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{9}
+\setcounter{table}{4}
+\setcounter{lastpagecount}{0}
+\setcounter{r@tfl@t}{0}
+\setcounter{caption@flags}{2}
+\setcounter{continuedfloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{svg@param@lastpage}{0}
+\setcounter{svg@param@currpage}{-1}
+\setcounter{LT@tables}{1}
+\setcounter{LT@chunks}{1}
+\setcounter{parentequation}{0}
+\setcounter{section@level}{1}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{0}
+\setcounter{lstnumber}{47}
+\setcounter{lstlisting}{11}
+}

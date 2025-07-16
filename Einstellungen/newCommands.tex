@@ -1,0 +1,40 @@
+% Floatparameter für ein günstigeres Platzieren von floatobjekten
+\renewcommand{\floatpagefraction}{.75} %default .5
+\renewcommand{\textfraction}{.15}
+\renewcommand{\topfraction}{.8}
+\renewcommand{\bottomfraction}{.5}
+
+% Verschiedene Verweisarten
+% Erweiterung zweisprachig, siehe TdS Aufgabensammlung
+\iflanguage{ngerman}{
+\newcommand{\Equ}[1]{Gleichung~(\ref{equ:#1})}
+\newcommand{\Abb}[1]{Abbildung~\ref{fig:#1}}
+\newcommand{\abb}[1]{Abb.~\ref{fig:#1}}
+\newcommand{\ABB}[2]{Abbildungen~\ref{fig:#1} und~\ref{fig:#2}}
+\newcommand{\Abbildungen}[2]{Abbildungen~\ref{fig:#1} bis~\ref{fig:#2}}
+\newcommand{\Tab}[1]{Tabelle~\ref{tab:#1}}
+\newcommand{\Kap}[1]{Kapitel~\ref{chap:#1}}
+\newcommand{\Absch}[1]{Abschnitt~\ref{sec:#1}}
+\newcommand{\UAbsch}[1]{Abschnitt~\ref{subsec:#1}}
+\newcommand{\App}[1]{Anhang~\ref{app:#1}}
+\newcommand{\AppAbsch}[1]{Anhang~\ref{sec:#1}}
+% Deutsche Bezeichnungen im Literaturverzeichnis
+\newcommand{\btxeditionlong}[1]{Auflage}
+}
+{
+\newcommand{\Equ}[1]{formula~(\ref{equ:#1})}
+\newcommand{\Abb}[1]{figure~\ref{fig:#1}}
+\newcommand{\abb}[1]{fig.~\ref{fig:#1}}
+\newcommand{\ABB}[2]{figure~\ref{fig:#1} and~\ref{fig:#2}}
+\newcommand{\Abbildungen}[2]{figures~\ref{fig:#1} to~\ref{fig:#2}}
+\newcommand{\Tab}[1]{table~\ref{tab:#1}}
+\newcommand{\Kap}[1]{chapter~\ref{chap:#1}}
+\newcommand{\Absch}[1]{section~\ref{sec:#1}}
+\newcommand{\UAbsch}[1]{section~\ref{subsec:#1}}
+\newcommand{\App}[1]{appendix~\ref{app:#1}}
+\newcommand{\AppAbsch}[1]{appendix~\ref{sec:#1}}
+}
+
+% Tabellenspalten mit Flattersatz setzen, muss \\ vor (z.B.) \raggedright geschuetzt werden:
+\newcommand{\PBS}[1]{\let\temp=\\#1\let\\=\temp} 
+

@@ -1,0 +1,119 @@
+
+% ======================
+% Einbinden von Packages
+% ======================
+
+% Layout
+\usepackage{a4}									% Ausgabeformat
+\usepackage{lastpage}						% Referenz auf letzte Seite des Dokuments verfügbar
+\usepackage{lscape}							% Querformat einer Seite durch den Aufruf \begin{landscape}
+\usepackage{rotating}						% Drehen von Gleitobjekten 
+
+% Spracheinstellungen
+\usepackage[english]{babel}
+   	% neue deutsche Rechtschreibung, deutsche Spracheinstellungen
+\usepackage[ansinew]{inputenc}  % direkte Eingabe von Umlauten über Tastatur
+\usepackage[T1]{fontenc}				% direkte Eingabe von Umlauten über Tastatur
+%\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+
+% Schriften
+\usepackage{helvet}         		% Helvetica als serifenlose Schriftart verwenden
+\usepackage[bf]{caption}    		% Formatierung von Tabellen- und Bildbeschriftungen
+\usepackage{verbatim}						% Ausgabe des Textes wie im Editor dargestellt, Tex-Direktiven werden nicht berücksichtigt
+%\setkomafont{sectioning}{\normalfont\bfseries} % Kapitelüberschriften mit Serifen
+\setkomafont{sectioning}{\sffamily\bfseries} % Kapitelüberschriften ohne Serifen
+\setkomafont{captionlabel}{\normalfont\bfseries}
+\setkomafont{descriptionlabel}{\normalfont\bfseries}
+
+
+% Grafiken
+\usepackage{graphics}						% Standardgrafikpaket
+\usepackage{graphicx} 					% Erweiterete Grafikoptionen
+\usepackage{subfigure}					% Unterabbildungen zulassen
+\usepackage{epsfig}							% Einbinden von Grafiken
+\usepackage{psfrag}    					% Einfügen von Latex-Schriften in eps-Bilder
+\usepackage{svg}
+% \usepackage{tikz}								% Package zum Zeichnen von Grafiken
+% \usepackage{pgfplots}						% Package zum Zeichnen von Plots, greift auf tikz zu
+\usepackage{epstopdf}		% wird nur mit PDFLatex benötigt, damit auch eps-Bilder verwendet werden können
+
+% Paket zum Erweitern der Tabelleneigenschaften
+\usepackage{array}							% erweiterte Einstellmöglichkeiten für Spaltenformate
+\usepackage{dcolumn}						% Ausrichtung des Dezimalpunktes
+\usepackage{multirow}						% mehrere Zeilen zusammefassen
+\usepackage{tabularx}   				% Erweiterte Tabellen Optionen
+\usepackage{booktabs}						% normgerechte Tabellen
+\usepackage{longtable}					% Mehrseitige Tabellen
+
+% Formeln
+\usepackage{amsmath}    				% Mathematik-Modus
+\usepackage{amsfonts}						% Schriftarten für Mathematik-Modus
+% \usepackage{dsfont}							% Zahlenmengen-Schriftart
+\usepackage{amssymb}    				% Symbole für Mathematik-Modus
+\usepackage{wasysym}						% >>,<<,approx
+\usepackage{upgreek}						% nichtkursive griechische Buchstaben
+% \usepackage{trfsigns}						% Transformationssymbole
+
+% Aufzählung
+\usepackage{mdwlist} 						% Aufzählung unterbrechen mit suspend{enumerate} und resume{enumerate}
+\usepackage{paralist}						% Verwendung von unterschiedichen Zeichen in einer Aufzählung
+
+
+% Sonstiges
+\usepackage{ifthen}							% Abfragen und bedingte Formatierung
+\usepackage[
+  hidelinks,        % remove colored boxes around links
+  linktocpage,      % make the page number, not the text, the clickable target
+  breaklinks=true,  % allow links to break across lines
+]{hyperref}
+
+\usepackage{xspace}    					% für Leerzeichen in Mathe
+ 
+\usepackage{bibgerm}						% Literaturverzeichnis
+
+\usepackage{tikz}		% fuer circuitikz Schaltpläne
+\usepackage[european, betterproportions, americaninductors]{circuitikz}
+
+\usepackage{pgfplots}   % um Plots darzustellen          
+\pgfplotsset{/pgf/number format/.cd, use comma}  % Komma bei Achsenbeschriftung
+\usepgfplotslibrary{groupplots}
+
+% Einheiten
+\usepackage{siunitx}  % bei newCommands_user Zeile 21 renewcommand statt newcommand, Zeile 85 auskommentiert
+\sisetup{locale = DE} % für Komma statt Punkt
+\usepackage{iftex}
+\ifPDFTeX
+  % pdflatex is in use:
+  % Do not load fontspec.
+  % Instead, rely on packages like inputenc, fontenc, and lmodern (which you already have)
+\else
+  % XeLaTeX or LuaLaTeX is in use:
+  \usepackage{fontspec}
+  % Optionally, set your main font here:
+  % \setmainfont{Times New Roman}
+\fi
+% Core Packages
+\usepackage{tikz}          % For TikZ graphics
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric, fit}
+\usepackage{graphicx}      % For figure handling
+\usepackage{xcolor}        % For color shading (e.g., gray!30)
+\usepackage[htt]{hyphenat}
+% TikZ Libraries
+\usetikzlibrary{arrows.meta}
+\usepackage{listings}
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    basicstyle=\footnotesize\ttfamily,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{red},
+    numbers=left,
+    stepnumber=1,
+    numbersep=5pt,
+    breaklines=true,
+    frame=single,
+    tabsize=4,
+    showstringspaces=false,
+}

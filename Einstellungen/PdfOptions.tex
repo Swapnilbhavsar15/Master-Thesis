@@ -1,0 +1,63 @@
+
+% ---------------------------------------------------------------------------
+% Pdf Optionen
+% ---------------------------------------------------------------------------
+%
+% Type 1 Fonts für bessere darstellung in PDF verwenden.
+%
+%\usepackage{mathptmx}           % Times + passende Mathefonts
+%\usepackage[scaled=.92]{helvet} % skalierte Helvetica als \sfdefault
+%\usepackage{courier}            % Courier als \ttdefault
+
+
+%
+% Package für Farben im PDF
+%
+\usepackage{color}
+\definecolor{hellgrau}{rgb}{0.9,0.9,0.9}
+
+% Paket für Links innerhalb des PDF Dokuments
+
+\definecolor{LinkColor}{rgb}{0,0,0.5}
+
+\definecolor{LinkColor}{rgb}{0,0,0}
+
+% Kapitel, Abbildungen, Tabellen und Literatur verlinken
+\usepackage[
+	linktocpage,					% Setzt Links in Verzeichnissen auf Seitenzahl --> keine Probleme mit Umbrüchen
+	ps2pdf,
+	colorlinks=false,			% Links farbig markieren; Druckversion: false, PDF-Version: true
+	linkcolor=blue,				% Linkfarbe
+	pdftitle={\worktitle},
+	pdfauthor={\student},
+	pdfsubject={\worksubject, \student},
+	pdfkeywords={\keywords}]
+{hyperref}
+
+
+% Anmerkung: Listings sind nicht kompatibel mit 
+% Paket um Listings sauber zu formatieren.
+
+\usepackage[savemem]{listings}
+\lstloadlanguages{TeX}
+\lstloadlanguages{Matlab}
+
+
+% Listing Definitionen für PHP Code
+
+\definecolor{lbcolor}{rgb}{0.85,0.85,0.85}
+\lstset{language=[LaTeX]TeX,
+	numbers=left,
+	stepnumber=1,
+	numbersep=5pt,
+	numberstyle=\tiny,
+	breaklines=true,
+	breakautoindent=true,
+	postbreak=\space,
+	tabsize=2,
+	basicstyle=\ttfamily\footnotesize,
+	showspaces=false,
+	showstringspaces=false,
+	extendedchars=true,
+	backgroundcolor=\color{lbcolor}}
+
