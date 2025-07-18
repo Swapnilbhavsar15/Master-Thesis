@@ -2,8 +2,9 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Perimeter Monitoring System at Airport~\cite {Airport_Image}}}{1}{figure.caption.5}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces DAS Setup~\cite {DAS_PPT}}}{2}{figure.caption.6}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A theoretical perimeter monitoring setup at an airport~\cite {Airport_Image}.}}{1}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces DAS setup~\cite {DAS_PPT}.}}{2}{figure.caption.6}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Spectral signal intensity distribution of the backscattered light~\cite {DAS_Manual}}}{4}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Working principle of DAS system~\cite {DAS_Manual}}}{4}{figure.caption.8}%
