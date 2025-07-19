@@ -3,10 +3,11 @@
 %
 %
 \chapter{Background}
-In this section we start of with how the DAS system works and the overall understanding of the principles and functionality. It also explains how the acoustic data is stored and to be retrieved later for the processing. An accompanying easy-to-use graphical user interface, the AP Sensing DAS Configurator Client, has also been explained. This software enables the creation of DAS system configurations, starting measurements, generating waterfall diagrams, and saving data.  
+This chapter details the principles of Distributed Acoustic Sensing (DAS), including the C-OTDR measurement principle, the components of the AP Sensing DAS hardware, and the functionality of the DAS Configurator application used for data acquisition and visualization. Then, it introduces the fundamentals of Machine Learning for image recognition, explaining key evaluation metrics derived from the confusion matrix, data augmentation techniques, and the basics of the PyTorch and Kornia libraries. The chapter concludes with a literature review that situates this work within the context of previous research on DAS-based activity detection.
 
 \section{Distributed Acoustic Sensing}
-The DAS system addresses applications with assets ranging from a few meters to several kilometers. DAS system capture the acoustic energy impacting the optical fiber energy, thereby enabling the real-time monitoring. There are several application where the DAS system Is already being used such as power cable monitoring, pipeline monitoring, train tracking, and perimeter security. The DAS system allows the surveillance and setting up an alarm system for unusual events. 
+
+Distributed Acoustic Sensing (DAS) transforms a standard fiber-optic cable into a dense array of thousands of virtual microphones. By sending pulses of laser light down the fiber and analyzing the coherent Rayleigh backscatter, a DAS system can detect minute physical disturbances acoustic vibrations or strain at any point along the cable's length. This enables precise localization and real-time monitoring of events over distances of several kilometers. Common applications include power-cable integrity checks, pipeline leak detection, train tracking, and perimeter security, where the system can continuously surveil and trigger alarms for anomalous activity. 
 
 \subsection{Measurement Principle}
 
@@ -19,16 +20,16 @@ The current measuring principle behind the DAS is measurement of acoustic vibrat
     \label{COTDR}
 \end{figure}
  
-Spectral signal intensity distribution of the backscattered light from the fiber is shown in Figure~\ref{COTDR}. DAS system works on the Rayleigh Scattering which is the highest peak in the Figure. It is a small fraction of light scattered by microscopic variations in fibre's refractive index. By sending the short pulses of laser and measuring the backscattering Rayleigh signal as a function of time, signals are localized along the fiber~\cite{masoudi}.  
+Spectral signal intensity distribution of the backscattered light from the fiber is shown in Figure~\ref{COTDR}. DAS systems work on the Rayleigh Backscattering which is the highest peak in the Figure. It is a small fraction of light scattered by microscopic variations in fibre's refractive index. By sending the short pulses of laser and measuring the backscattering Rayleigh signal as a function of time, signals are localized along the fiber~\cite{masoudi}.  
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\linewidth]{Bilder/jpg/DAS_Acoustic_Event.jpg}
+    \includegraphics[width=0.7\linewidth]{Bilder/jpg/DAS_Acoustic_Event.jpg}
     \caption{Working principle of DAS system~\cite{DAS_Manual}}
     \label{DAS_working}
 \end{figure}
 
-Figure~\ref{DAS_working} shows how the laser is sent through the fiber optic cable and detected back after back scattering. When the acoustic event takes place, a tiny elongation or compression($\Delta L$), thereby altering the phase relationship of the backscattered light signals. These signals are analyzed to show the frequency and amplitude disturbances. Exact location of the acoustic event can be identified by measuring the time-dependent return of the light, just as the same principle used in radar echos. 
+Figure~\ref{DAS_working} shows how the laser is sent through the fiber optic cable and detected back after back scattering. When the acoustic event takes place, a tiny elongation or compression($\Delta L$) alters the phase relationship of the backscattered light signals. These signals are analyzed to show the frequency and amplitude disturbances. An Exact location of the acoustic event can be identified by measuring the time-dependent return of the light,  the same principle used in radar echos. 
 
 \begin{figure}[h]
   \centering
@@ -37,10 +38,10 @@ Figure~\ref{DAS_working} shows how the laser is sent through the fiber optic cab
   \label{DAS_waterfall}
 \end{figure}
 
-After digitizing and filtering the analog signals, the data can be processed and analyzed over distance and time and displayed in the form of a waterfall diagram as shown in the Figure~\ref{DAS_waterfall} or the data is recorded in the files in the HDF5 file format. The data from the HDF5 file is used to develop an algorithm which is used for the footsteps detection. Transforming the signal amplitude over time and in the frequency domain retrieves the acoustic event's frequency content. Using the acoustic event's location, amplitude, and frequency response, the system sets up an alarm for a potential threat-related activity. 
+After digitizing and filtering the analog signals, the data can be processed and analyzed over distance and time and displayed in the form of a waterfall diagram as shown in the Figure~\ref{DAS_waterfall} where X-axis is the position on fiber and Y-axis is timestamp of recording. The data is recorded in the files in the HDF5 file format. The data from the HDF5 file is used to develop an algorithm which is used for the footsteps detection. Transforming the signal amplitude over time and in the frequency domain retrieves the acoustic event's frequency content. Using the acoustic event's location, amplitude, and frequency response, the system sets up an alarm for a potential threat-related activity. 
 
-\subsection{DAS System}
-There are two main components of the DAS system - the Interrogator Unit(IU) and the Digital Processing Unit(DPU). Figure~\ref{DAS} shows the IU(top) and DPU(bottom) which are the part of the DAS system. Both of these devices have different tasks and where the events are detected and then processed.
+\subsection{AP Sensing DAS System}
+There are two main components of the AP Sensing DAS system - the Interrogator Unit(IU) and the Digital Processing Unit(DPU). Figure~\ref{DAS} shows the IU(top) and DPU(bottom) which are the part of the DAS system.
 
 \begin{figure}[h]
     \centering
@@ -58,7 +59,7 @@ The IU(top) has the task of sending out highly coherent laser pulses into the fi
     \label{IU}
 \end{figure}
 
-The IU(top) has two channels (horizontal and vertical polarization) which are connected to the DPU(bottom). USB connector is also connected to the DPU(bottom). Power socket is needed to power the IU. The trigger which is used to trigger sending of laser pulse is also connected to the DPU. Digitizer inside the DPU(bottom) for synchronization between the IU(top) and DPU(bottom) . The IU(top) contains a reference coil of 120m optical fiber inside the case unit. The primary function of this reference coil is to get around the speed of light. 
+The IU(top) has two channels (horizontal and vertical polarization) which are connected to the DPU(bottom). A USB connector is also connected to the DPU(bottom). A Power socket is needed to power the IU. The trigger which is used to trigger sending of laser pulse is also connected to the DPU. A Digitizer inside the DPU(bottom) is used for synchronization between the IU(top) and DPU(bottom). The IU(top) contains a reference coil of 120m optical fiber inside the case unit. The primary function of this reference coil is to monitor system noise and to checkw whether equipment is measuring accurately. 
 
 \begin{figure}[h]
     \centering
@@ -67,7 +68,7 @@ The IU(top) has two channels (horizontal and vertical polarization) which are co
     \label{DPU}
 \end{figure}
 
-Figure~\ref{DPU} show the rear view of the DPU of the DAS system. All the connections like the channels, USB, trigger and clock coming from the IU needs to be connected to the DPU. The DPU needs a separate power connection to power it up. There is also an Ethernet port which is used to connect the DAS system to network. The DAS system is configured inside DAS Configurator application if the IP address of the system is known. All the calculations are started through this app. The data can is stored in the form of HDF5 file. There are two SSDs available inside the DPU which can be used to store data. The stored data is automatically overwritten once when the capacity limit is reached, following the first-in, first-out (FIFO) approach. There is also other functionality that the data will be erased 30 days after the data is being stored. 
+Figure~\ref{DPU} show the rear view of the DPU of the DAS system. All the connections like the channels, USB, trigger and clock coming from the IU needs to be connected to the DPU. The DPU needs a separate power connection to power it up. There is also an Ethernet port which is used to connect the DAS system to network. The DAS system is connected to a computer via DAS Configurator application if the IP address of the system is known. All the calculations are started through this app. The data is stored in the form of HDF5 file. There are two SSDs available inside the DPU which can be used to store data. The stored data is automatically overwritten once when the capacity limit is reached, following the first-in, first-out (FIFO) approach. There is also other functionality that the data will be erased 30 days after the data is being stored. 
 
 The data outputted from the DPU is made available in the three different formats. 
 
@@ -76,15 +77,15 @@ The data outputted from the DPU is made available in the three different formats
     This data type provides the raw signal of dynamic strain along the fiber, making it the most data-intensive of the three.
 
     \item{FBE (Frequency Band Energy):} 
-    This data type aggregates the energy within each defined frequency band. After the backscattered signals are captured at each distance channel, they are divided into separate frequency ranges (e.g., 8-20 Hz). The total energy in each band is then displayed in the waterfall plot~\ref{DAS_waterfall} of the DAS Configurator Client. Its primary purpose is to differentiate between various acoustic events.
+    This data type aggregates the energy within each defined frequency band. After the backscattered signals are captured at each distance channel, they are divided into separate frequency ranges (e.g., 8-20 Hz). The total energy in each band is then displayed in the waterfall plot in Figure~\ref{DAS_waterfall} of the DAS Configurator Client. Its primary purpose is to differentiate between various acoustic events.
 
     \item{DTGS (Distributed Temperature Gradient Sensing):} 
     This data type highlights gradual variations in the signal arising from bulk temperature or strain effects. Conceptually, it functions like an additional low-frequency band, as the phase signal is analyzed at frequencies below 0.5 Hz.
 \end{itemize}
 
 
-\subsection{DAS Configurator Application}\label{sec:config_app}
-DAS Configurator Application is an easy-to-use graphical interface for AP Sensing DAS systems. It allows users to configure and run measurements on the DAS system. The recording and saving of the measured data is also be done which can be useful for analysis and testing of trained models like ConvNext V2 and EfficientNet. It also helps in analyzing and visualization of the data. The data is collected from the DPU which acts as a server. It is designed to continuously run to record the data. The DAS client configurator Application is installed on a separate computer which is connected to the DAS DPU via Ethernet. 
+\subsection{DAS Configurator Client}\label{sec:config_app}
+DAS Configurator Application is an easy-to-use graphical interface for AP Sensing DAS systems. It allows users to configure and run measurements on the DAS system. The recording and saving of the measured data is also be done which can be useful for analysis and testing of trained models like ConvNext V2 and EfficientNet. It also helps in analyzing and visualization of the data. The data is collected from the DPU which acts as a server. It is designed to continuously run to record the data. The DAS client configurator application is installed on a separate computer which is connected to the DAS DPU via Ethernet. 
 
 \begin{figure}[h]
     \centering
@@ -123,7 +124,7 @@ For a model to detect the similar sort of patterns, it needs to be trained and e
     To check whether the model is trained properly or not, the model needs to be evaluated on a different dataset which is not used in training phase. Evaluation dataset should be similar to the training dataset but should not contain any of the images from the training dataset. Evaluation dataset is used to check how well the model is trained and how well it can detect the patterns in the images. The performance of the model is determined using the confusion matrix. Confusion matrix is a table which shows the actual and predicted values of the model. Confusion matrix is used to check how well the model is trained and how well it can detect the patterns in the images. 
 \end{itemize}
 
-\subsection{PyTorch}
+\subsection{PyTorch}\label{sec:PyTorch}
 PyTorch~\cite{PyTorch_website} is a machine learning library that provides an imperative and Pythonic coding style, emphasizing ease of use, seamless debugging, and alignment with other scientific computing libraries, while maintaining efficiency and supporting hardware accelerators like GPUs. The trend started in domain specific languages such as APL, MATLAB, R which turned multidimensional arrays (also known as tensors) into objects supported by mathematical primitives to manipulate them. Other libraries such as NumPy, Torch, Eigen and Lush made array-based(tensor) programming productive in general purpose languages such as Python and C++~\cite{pytorch}. 
 
 Deep learning is computations on tensors, which are generalizations of a matrix that can be indexed in more than 2D. Data required is extracted in the form of NumPy arrays. Arrays are preprocessed according to the requirement in such a way that patterns in the images are clearly visible. Then NumPy data is converted into a tensor which then feed to a model for training. The model trains based on this tensor. There are various metrics which need to be monitored while training the model to see if the model is learning efficiently and not memorizing the patterns. 
@@ -265,13 +266,13 @@ In this augmentation, gaussian noise is injected into the image to increase the 
 
 \subsection{Kornia}
 
-Kornia is an open-source computer vision library built on top of PyTorch that provides a familiar, NumPy-like API for classical vision operations (e.g.\ geometric transforms, filtering, feature detection) in a fully differentiable and GPU-accelerated form. Unlike the traditional 'torchvision.transforms~\cite{torchvision2024}', which execute many augmentations on the CPU and then copy results to the GPU, Kornia implements each operation as a native PyTorch module or function that runs directly on CUDA. This tight integration allows to include data augmentations as part of the model's computation graph-making them differentiable, reducing host-device synchronization overhead, and enabling end-to-end optimization when desired.
+Kornia is an open-source computer vision library built on top of PyTorch\ref{sec:PyTorch} that provides a familiar, NumPy-like API for classical vision operations (e.g.\ geometric transforms, filtering, feature detection) in a fully differentiable and GPU-accelerated form. Unlike the traditional 'torchvision.transforms'~\cite{torchvision2024}, which execute many augmentations on the CPU and then copy results to the GPU, Kornia implements each operation as a native PyTorch module or function that runs directly on CUDA. This tight integration allows to include data augmentations as part of the model's computation graph-making them differentiable, reducing host-device synchronization overhead, and enabling end-to-end optimization when desired.
 
 In our spectrogram-based footstep classification pipeline, we use several Kornia augmentations (Horizontal Flip, Normalize) alongside custom PyTorch modules.  By leveraging Kornia, we gain:
 
 \begin{itemize}
-  \item \textbf{Performance}: all transformations (flips, normalizations, warps) execute on the GPU, avoiding costly host-device transfers and achieving higher throughput during training.
-  \item \textbf{Differentiability}: since each augmentation is a PyTorch module, gradients can flow through the transform when performing adversarial or meta-learning experiments that require backpropagation through data augmentation.
+  \item \textbf{Performance}: All transformations (flips, normalizations, warps) execute directly on the GPU, avoiding costly host-device transfers (i.e., data is not sent back to the CPU for processing) and achieving higher throughput during training.
+  \item \textbf{Differentiability}: Since each augmentation is a PyTorch module, gradients can flow through the transform when performing adversarial or meta-learning experiments that require backpropagation through data augmentation.
   \item \textbf{Composability}: Kornia's ops follow the same 'torch.nn.Module' and functional API conventions as PyTorch, allowing seamless integration into 'torchvision.transforms.Compose', 'torch.nn.Sequential', or custom training loops.
 \end{itemize}
 

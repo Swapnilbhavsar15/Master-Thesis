@@ -15,35 +15,35 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Graphical Interface of DAS Configurator Application~\cite {DAS_Configurator_Manual}}}{9}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Optical Channel Window in DAS Configurator Application}}{10}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Horizontal Flip~\cite {kitten}}}{17}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Vertical Scaling~\cite {kitten}}}{17}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Vertical Scaling~\cite {kitten}}}{18}{figure.caption.29}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Horizontal Scaling~\cite {kitten}}}{18}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Gaussian Noise Injection~\cite {kitten}}}{18}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Gaussian Noise Injection~\cite {kitten}}}{19}{figure.caption.35}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Fiber optic layout at the Energy Center \cite {energy_ppt}}}{23}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Block diagram of the general structure of the system}}{24}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Data acquisition block: Recording phase data, storing in HDF5 format, and visualizing the data.}}{25}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces RGB plot for the phase data}}{27}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Extraction block: HDF5 file and Region masks are used to extract footstep and background data.}}{27}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Region annotation of background and footstep data}}{28}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Preprocessing block: Footstep/Background files are processed through an Accumulator and STFT to produce Spectrograms.}}{29}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Spectrogram for walking data}}{29}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Spectrogram for background noise data}}{30}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Model training block: Footstep/Background dataset is split into training and validation sets, augmented, and then trained and validated.}}{31}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Fiber optic layout at the Energy Center \cite {energy_ppt}}}{24}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Block diagram of the general structure of the system}}{25}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Data acquisition block: Recording phase data, storing in HDF5 format, and visualizing the data.}}{26}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces RGB plot for the phase data}}{28}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Extraction block: HDF5 file and Region masks are used to extract footstep and background data.}}{28}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Region annotation of background and footstep data}}{29}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Preprocessing block: Footstep/Background files are processed through an Accumulator and STFT to produce Spectrograms.}}{30}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Spectrogram for walking data}}{30}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Spectrogram for background noise data}}{31}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Model training block: Footstep/Background dataset is split into training and validation sets, augmented, and then trained and validated.}}{32}{figure.caption.58}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces LabelMe tool for annotation}}{33}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectrogram for walking data with 1 spatial channel}}{37}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectrogram for walking data with 10 spatial channels}}{38}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Augmentations of the input tensor}}{43}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Loss and Accuracy plots for training and validation for ConvNext V2 on dataset-1D}}{53}{figure.caption.63}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Loss and Accuracy plots for training and validation for EfficientNet on dataset-1D}}{54}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Loss and Accuracy plots for training and validation for ConvNext V2 with 10 spatial channels and 2 sample length}}{55}{figure.caption.67}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Loss and Accuracy plots for training and validation for EfficientNet with 10 spatial channels and 2 sample length}}{56}{figure.caption.69}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Dependency Graph of \texttt {spectrogram\_classifier} module}}{59}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces LabelMe tool for annotation}}{34}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectrogram for walking data with 1 spatial channel}}{38}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectrogram for walking data with 10 spatial channels}}{39}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Augmentations of the input tensor}}{44}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Loss and Accuracy plots for training and validation for ConvNext V2 on dataset-1D}}{54}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Loss and Accuracy plots for training and validation for EfficientNet on dataset-1D}}{55}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Loss and Accuracy plots for training and validation for ConvNext V2 with 10 spatial channels and 2 sample length}}{56}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Loss and Accuracy plots for training and validation for EfficientNet with 10 spatial channels and 2 sample length}}{57}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Dependency Graph of \texttt {spectrogram\_classifier} module}}{60}{figure.caption.71}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces DAS Configurator Application detections for ConvNext V2 model on dataset-1D}}{66}{figure.caption.72}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces DAS Configurator Application detections for ConvNext V2 model on dataset-2D}}{67}{figure.caption.73}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces DAS Configurator Application detections for EfficientNet V2 model on dataset-1D}}{68}{figure.caption.74}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces DAS Configurator Application detections for EfficientNet V2 model on dataset-2D}}{69}{figure.caption.75}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces DAS Configurator Application detections for ConvNext V2 model on dataset-1D}}{67}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces DAS Configurator Application detections for ConvNext V2 model on dataset-2D}}{68}{figure.caption.73}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces DAS Configurator Application detections for EfficientNet V2 model on dataset-1D}}{69}{figure.caption.74}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces DAS Configurator Application detections for EfficientNet V2 model on dataset-2D}}{70}{figure.caption.75}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

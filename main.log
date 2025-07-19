@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.16)  18 JUL 2025 22:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.16)  19 JUL 2025 21:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1445,175 +1445,172 @@ Package pdftex.def Info: Bilder/jpg/System.jpg  used on input line 23.
 
  (./Kapitel/Kapitel_2.tex
 chapter 2.
-<Bilder/jpg/COTDR.jpg, id=279, 259.9311pt x 228.1323pt>
-File: Bilder/jpg/COTDR.jpg Graphic file (type jpg)
-<use Bilder/jpg/COTDR.jpg>
-Package pdftex.def Info: Bilder/jpg/COTDR.jpg  used on input line 17.
-(pdftex.def)             Requested size: 288.35587pt x 253.10103pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [3
 
 
 
 
 ]
+<Bilder/jpg/COTDR.jpg, id=283, 259.9311pt x 228.1323pt>
+File: Bilder/jpg/COTDR.jpg Graphic file (type jpg)
+<use Bilder/jpg/COTDR.jpg>
+Package pdftex.def Info: Bilder/jpg/COTDR.jpg  used on input line 18.
+(pdftex.def)             Requested size: 288.35587pt x 253.10103pt.
 <Bilder/jpg/DAS_Acoustic_Event.jpg, id=288, 1893.2331pt x 633.8079pt>
 File: Bilder/jpg/DAS_Acoustic_Event.jpg Graphic file (type jpg)
 <use Bilder/jpg/DAS_Acoustic_Event.jpg>
-Package pdftex.def Info: Bilder/jpg/DAS_Acoustic_Event.jpg  used on input line 26.
-(pdftex.def)             Requested size: 329.55226pt x 110.31844pt.
- [4{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc} <./Bilder/jpg/COTDR.jpg> <./Bilder/jpg/DAS_Acoustic_Event.jpg>]
-<Bilder/jpg/DAS Waterfall.jpg, id=299, 906.38625pt x 786.94pt>
+Package pdftex.def Info: Bilder/jpg/DAS_Acoustic_Event.jpg  used on input line 27.
+(pdftex.def)             Requested size: 288.35587pt x 96.52742pt.
+ [4 <./Bilder/jpg/COTDR.jpg> <./Bilder/jpg/DAS_Acoustic_Event.jpg>]
+<Bilder/jpg/DAS Waterfall.jpg, id=297, 906.38625pt x 786.94pt>
 File: Bilder/jpg/DAS Waterfall.jpg Graphic file (type jpg)
 <use Bilder/jpg/DAS Waterfall.jpg>
-Package pdftex.def Info: Bilder/jpg/DAS Waterfall.jpg  used on input line 35.
+Package pdftex.def Info: Bilder/jpg/DAS Waterfall.jpg  used on input line 36.
 (pdftex.def)             Requested size: 288.35587pt x 250.349pt.
-
-Overfull \hbox (27.44305pt too wide) in paragraph at lines 43--44
-\T1/lmr/m/n/12 and the Dig-i-tal Pro-cess-ing Unit(DPU). Fig-ure []2.4[] shows the IU(top) and DPU(bottom)
- []
-
-[5 <./Bilder/jpg/DAS Waterfall.jpg>]
+ [5{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc} <./Bilder/jpg/DAS Waterfall.jpg>]
 <Bilder/jpg/DAS.jpg, id=309, 409.0482pt x 170.19585pt>
 File: Bilder/jpg/DAS.jpg Graphic file (type jpg)
 <use Bilder/jpg/DAS.jpg>
-Package pdftex.def Info: Bilder/jpg/DAS.jpg  used on input line 47.
+Package pdftex.def Info: Bilder/jpg/DAS.jpg  used on input line 48.
 (pdftex.def)             Requested size: 411.93877pt x 171.403pt.
 <Bilder/jpg/DAS IU Technical Description.png, id=313, 1135.296pt x 419.166pt>
 File: Bilder/jpg/DAS IU Technical Description.png Graphic file (type png)
 <use Bilder/jpg/DAS IU Technical Description.png>
-Package pdftex.def Info: Bilder/jpg/DAS IU Technical Description.png  used on input line 56.
+Package pdftex.def Info: Bilder/jpg/DAS IU Technical Description.png  used on input line 57.
 (pdftex.def)             Requested size: 411.93877pt x 152.0893pt.
-
-Overfull \hbox (26.5605pt too wide) in paragraph at lines 61--62
-\T1/lmr/m/n/12 con-nected to the DPU(bottom). USB con-nec-tor is also con-nected to the DPU(bottom).
- []
-
-[6 <./Bilder/jpg/DAS.jpg> <./Bilder/jpg/DAS IU Technical Description.png>]
+ [6 <./Bilder/jpg/DAS.jpg> <./Bilder/jpg/DAS IU Technical Description.png>]
 <Bilder/jpg/DAS DPU Rear.png, id=322, 906.7476pt x 520.8258pt>
 File: Bilder/jpg/DAS DPU Rear.png Graphic file (type png)
 <use Bilder/jpg/DAS DPU Rear.png>
-Package pdftex.def Info: Bilder/jpg/DAS DPU Rear.png  used on input line 65.
+Package pdftex.def Info: Bilder/jpg/DAS DPU Rear.png  used on input line 66.
 (pdftex.def)             Requested size: 411.93877pt x 236.61848pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 75.
+ [7 <./Bilder/jpg/DAS DPU Rear.png>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 76.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [7{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./Bilder/jpg/DAS DPU Rear.png>]
-<Bilder/jpg/DAS_config.jpg, id=333, 745.257pt x 393.105pt>
+)
+<Bilder/jpg/DAS_config.jpg, id=332, 745.257pt x 393.105pt>
 File: Bilder/jpg/DAS_config.jpg Graphic file (type jpg)
 <use Bilder/jpg/DAS_config.jpg>
-Package pdftex.def Info: Bilder/jpg/DAS_config.jpg  used on input line 91.
+Package pdftex.def Info: Bilder/jpg/DAS_config.jpg  used on input line 92.
 (pdftex.def)             Requested size: 411.93877pt x 217.2881pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/jpg/optical_channel.png, id=337, 481.8pt x 394.47375pt>
+[8{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
+<Bilder/jpg/optical_channel.png, id=341, 481.8pt x 394.47375pt>
 File: Bilder/jpg/optical_channel.png Graphic file (type png)
 <use Bilder/jpg/optical_channel.png>
-Package pdftex.def Info: Bilder/jpg/optical_channel.png  used on input line 100.
+Package pdftex.def Info: Bilder/jpg/optical_channel.png  used on input line 101.
 (pdftex.def)             Requested size: 329.55226pt x 269.82765pt.
-[8]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9 <./Bilder/jpg/DAS_config.jpg>] [10 <./Bilder/jpg/optical_channel.png>] [11] [12]
-Overfull \hbox (18.08325pt too wide) in paragraph at lines 138--152
+Overfull \hbox (18.08325pt too wide) in paragraph at lines 139--153
  [][] 
  []
 
-[13] [14{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] [15] [16]
+[13] [14] [15{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] [16]
 <Bilder/jpg/Horizontal flip.png, id=405, 1387.584pt x 698.8509pt>
 File: Bilder/jpg/Horizontal flip.png Graphic file (type png)
 <use Bilder/jpg/Horizontal flip.png>
-Package pdftex.def Info: Bilder/jpg/Horizontal flip.png  used on input line 231.
+Package pdftex.def Info: Bilder/jpg/Horizontal flip.png  used on input line 232.
 (pdftex.def)             Requested size: 247.16577pt x 124.4761pt.
 <Bilder/jpg/amp.png, id=409, 1387.584pt x 698.8509pt>
 File: Bilder/jpg/amp.png Graphic file (type png)
 <use Bilder/jpg/amp.png>
-Package pdftex.def Info: Bilder/jpg/amp.png  used on input line 241.
+Package pdftex.def Info: Bilder/jpg/amp.png  used on input line 242.
 (pdftex.def)             Requested size: 247.16577pt x 124.4761pt.
- [17 <./Bilder/jpg/Horizontal flip.png> <./Bilder/jpg/amp.png>]
-<Bilder/jpg/affine.png, id=424, 1387.584pt x 698.8509pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Bilder/jpg/affine.png, id=413, 1387.584pt x 698.8509pt>
 File: Bilder/jpg/affine.png Graphic file (type png)
 <use Bilder/jpg/affine.png>
-Package pdftex.def Info: Bilder/jpg/affine.png  used on input line 251.
+Package pdftex.def Info: Bilder/jpg/affine.png  used on input line 252.
 (pdftex.def)             Requested size: 247.16577pt x 124.4761pt.
-<Bilder/jpg/Noise.png, id=428, 1850.112pt x 959.0229pt>
+[17 <./Bilder/jpg/Horizontal flip.png>]
+<Bilder/jpg/Noise.png, id=429, 1850.112pt x 959.0229pt>
 File: Bilder/jpg/Noise.png Graphic file (type png)
 <use Bilder/jpg/Noise.png>
-Package pdftex.def Info: Bilder/jpg/Noise.png  used on input line 261.
+Package pdftex.def Info: Bilder/jpg/Noise.png  used on input line 262.
 (pdftex.def)             Requested size: 247.16577pt x 128.11623pt.
- [18 <./Bilder/jpg/affine.png> <./Bilder/jpg/Noise.png>]
-Overfull \hbox (12.28755pt too wide) in paragraph at lines 275--276
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18 <./Bilder/jpg/amp.png> <./Bilder/jpg/affine.png>]
+Overfull \hbox (12.28755pt too wide) in paragraph at lines 276--277
 \T1/lmr/m/n/12 tional API con-ven-tions as Py-Torch, al-low-ing seam-less in-te-gra-tion into 'torchvi-
  []
 
-[19] [20]
-Overfull \hbox (4.01003pt too wide) in paragraph at lines 296--297
+[19 <./Bilder/jpg/Noise.png>] [20]
+Overfull \hbox (4.01003pt too wide) in paragraph at lines 297--298
 \T1/lmr/m/n/12 tem-at-i-cally eval-u-ate dif-fer-ent spec-tro-gram pa-ram-e-ters, data-augmentation recipes,
  []
 
 
-Overfull \hbox (0.48735pt too wide) in paragraph at lines 296--297
+Overfull \hbox (0.48735pt too wide) in paragraph at lines 297--298
 \T1/lmr/m/n/12 and back-bone ar-chi-tec-tures, and find that a lightweight vision-transformer slightly
  []
 
-) [21]
+) [21] [22]
 \openout2 = `Kapitel/Kapitel_3.aux'.
 
  (./Kapitel/Kapitel_3.tex
 chapter 3.
-<Bilder/jpg/energiezentrale.png, id=496, 634.224pt x 399.237pt>
+<Bilder/jpg/energiezentrale.png, id=501, 634.224pt x 399.237pt>
 File: Bilder/jpg/energiezentrale.png Graphic file (type png)
 <use Bilder/jpg/energiezentrale.png>
 Package pdftex.def Info: Bilder/jpg/energiezentrale.png  used on input line 13.
 (pdftex.def)             Requested size: 411.93877pt x 259.31212pt.
-[22
+[23
 
 
 
 
-] [23 <./Bilder/jpg/energiezentrale.png>] [24]
+] [24 <./Bilder/jpg/energiezentrale.png>] [25]
 \pgf@layerbox@background=\box90
 \pgf@layerboxsaved@background=\box91
- [25]
-<Bilder/jpg/plot_rgb.png, id=534, 1850.112pt x 959.0229pt>
+ [26]
+<Bilder/jpg/plot_rgb.png, id=539, 1850.112pt x 959.0229pt>
 File: Bilder/jpg/plot_rgb.png Graphic file (type png)
 <use Bilder/jpg/plot_rgb.png>
 Package pdftex.def Info: Bilder/jpg/plot_rgb.png  used on input line 170.
 (pdftex.def)             Requested size: 411.93877pt x 213.53192pt.
- [26]
-<Bilder/jpg/labelme.jpg, id=543, 483.8075pt x 313.17pt>
+ [27]
+<Bilder/jpg/labelme.jpg, id=548, 483.8075pt x 313.17pt>
 File: Bilder/jpg/labelme.jpg Graphic file (type jpg)
 <use Bilder/jpg/labelme.jpg>
 Package pdftex.def Info: Bilder/jpg/labelme.jpg  used on input line 229.
 (pdftex.def)             Requested size: 411.93877pt x 266.65926pt.
- [27 <./Bilder/jpg/plot_rgb.png>]
+ [28 <./Bilder/jpg/plot_rgb.png>]
 Underfull \hbox (badness 1163) in paragraph at lines 274--274
 [][][]|\T1/lmr/m/n/12 Pre-pro-cess-ing block: Foot-step/Back-ground files are pro-cessed
  []
 
-[28 <./Bilder/jpg/labelme.jpg>]
-<Bilder/jpg/walking_1d.png, id=557, 516.7305pt x 362.0727pt>
+[29 <./Bilder/jpg/labelme.jpg>]
+<Bilder/jpg/walking_1d.png, id=563, 516.7305pt x 362.0727pt>
 File: Bilder/jpg/walking_1d.png Graphic file (type png)
 <use Bilder/jpg/walking_1d.png>
 Package pdftex.def Info: Bilder/jpg/walking_1d.png  used on input line 282.
 (pdftex.def)             Requested size: 288.35587pt x 202.05215pt.
- [29 <./Bilder/jpg/walking_1d.png>]
-<Bilder/jpg/background_1d.png, id=565, 496.4949pt x 367.8543pt>
+ [30 <./Bilder/jpg/walking_1d.png>]
+<Bilder/jpg/background_1d.png, id=570, 496.4949pt x 367.8543pt>
 File: Bilder/jpg/background_1d.png Graphic file (type png)
 <use Bilder/jpg/background_1d.png>
 Package pdftex.def Info: Bilder/jpg/background_1d.png  used on input line 291.
 (pdftex.def)             Requested size: 288.35587pt x 213.6531pt.
-) [30 <./Bilder/jpg/background_1d.png>] [31]
+) [31 <./Bilder/jpg/background_1d.png>] [32]
 \openout2 = `Kapitel/Kapitel_4.aux'.
 
  (./Kapitel/Kapitel_4.tex
 chapter 4.
-<Bilder/jpg/label.jpg, id=582, 963.6pt x 505.89pt>
+<Bilder/jpg/label.jpg, id=587, 963.6pt x 505.89pt>
 File: Bilder/jpg/label.jpg Graphic file (type jpg)
 <use Bilder/jpg/label.jpg>
 Package pdftex.def Info: Bilder/jpg/label.jpg  used on input line 19.
@@ -1621,7 +1618,7 @@ Package pdftex.def Info: Bilder/jpg/label.jpg  used on input line 19.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32
+[33
 
 
 
@@ -1630,44 +1627,44 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 28.
- [33 <./Bilder/jpg/label.jpg>] [34] [35] [36]
-<Bilder/jpg/walking_1ch.png, id=682, 1106.4537pt x 722.7pt>
+ [34 <./Bilder/jpg/label.jpg>] [35] [36] [37]
+<Bilder/jpg/walking_1ch.png, id=687, 1106.4537pt x 722.7pt>
 File: Bilder/jpg/walking_1ch.png Graphic file (type png)
 <use Bilder/jpg/walking_1ch.png>
 Package pdftex.def Info: Bilder/jpg/walking_1ch.png  used on input line 116.
 (pdftex.def)             Requested size: 329.55226pt x 215.24576pt.
- [37 <./Bilder/jpg/walking_1ch.png>]
-<Bilder/jpg/walking_10ch.png, id=690, 1110.7899pt x 722.7pt>
+ [38 <./Bilder/jpg/walking_1ch.png>]
+<Bilder/jpg/walking_10ch.png, id=695, 1110.7899pt x 722.7pt>
 File: Bilder/jpg/walking_10ch.png Graphic file (type png)
 <use Bilder/jpg/walking_10ch.png>
 Package pdftex.def Info: Bilder/jpg/walking_10ch.png  used on input line 126.
 (pdftex.def)             Requested size: 329.55226pt x 214.40767pt.
- [38 <./Bilder/jpg/walking_10ch.png>] [39] [40] [41]
+ [39 <./Bilder/jpg/walking_10ch.png>] [40] [41] [42]
 Overfull \hbox (5.1624pt too wide) in paragraph at lines 232--234
 \T1/lmr/m/n/12 Multiplies the spec-tro-gram ten-sor by a ran-dom fac-tor in the in-ter-val $\OT1/lmr/m/n/12 [0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 9\OML/lmm/m/it/12 ; \OT1/lmr/m/n/12 1\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 1]$\T1/lmr/m/n/12 ,
  []
 
-[42]
+[43]
 Overfull \hbox (16.13985pt too wide) in paragraph at lines 245--246
 []\T1/lmr/m/n/12 Each aug-men-ta-tion's ap-pli-ca-tion is gated by \T1/lmtt/c/it/12 if torch.rand(1).item() < self.p:
  []
 
-<Bilder/jpg/aug.png, id=797, 867.24pt x 433.62pt>
+<Bilder/jpg/aug.png, id=802, 867.24pt x 433.62pt>
 File: Bilder/jpg/aug.png Graphic file (type png)
 <use Bilder/jpg/aug.png>
 Package pdftex.def Info: Bilder/jpg/aug.png  used on input line 249.
 (pdftex.def)             Requested size: 411.93877pt x 205.97163pt.
-[43 <./Bilder/jpg/aug.png>] [44] [45]
+[44 <./Bilder/jpg/aug.png>] [45] [46]
 Overfull \hbox (23.2677pt too wide) in paragraph at lines 313--314
 \T1/lmtt/c/it/12 -entnet_-b0.ra_-in1k \T1/lmr/m/n/12 or \T1/lmtt/c/it/12 con-vnextv2_-atto.fcmae_-ft_-in1k\T1/lmr/m/n/12 ) with pre-trained weights,
  []
 
-[46] [47{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [48] [49] [50] [51]
+[47] [48{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [49] [50] [51] [52]
 Overfull \hbox (29.4911pt too wide) in paragraph at lines 486--487
 []\T1/lmr/m/n/12 Next, the model is setup to (\T1/lmtt/c/it/12 efficientnet_-b0.ra_-in1k \T1/lmr/m/n/12 or \T1/lmtt/c/it/12 con-vnextv2_-atto.fcmae_-
  []
 
-<Bilder/jpg/conv_1d_train.png, id=1042, 1000.2168pt x 330.9966pt>
+<Bilder/jpg/conv_1d_train.png, id=1047, 1000.2168pt x 330.9966pt>
 File: Bilder/jpg/conv_1d_train.png Graphic file (type png)
 <use Bilder/jpg/conv_1d_train.png>
 Package pdftex.def Info: Bilder/jpg/conv_1d_train.png  used on input line 498.
@@ -1675,26 +1672,26 @@ Package pdftex.def Info: Bilder/jpg/conv_1d_train.png  used on input line 498.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[52] [53 <./Bilder/jpg/conv_1d_train.png>]
-<Bilder/jpg/eff_1d_train.png, id=1057, 1000.2168pt x 330.9966pt>
+[53] [54 <./Bilder/jpg/conv_1d_train.png>]
+<Bilder/jpg/eff_1d_train.png, id=1062, 1000.2168pt x 330.9966pt>
 File: Bilder/jpg/eff_1d_train.png Graphic file (type png)
 <use Bilder/jpg/eff_1d_train.png>
 Package pdftex.def Info: Bilder/jpg/eff_1d_train.png  used on input line 532.
 (pdftex.def)             Requested size: 411.93877pt x 136.32059pt.
- [54 <./Bilder/jpg/eff_1d_train.png>]
-<Bilder/jpg/conv_2d_train.png, id=1066, 999.4941pt x 330.9966pt>
+ [55 <./Bilder/jpg/eff_1d_train.png>]
+<Bilder/jpg/conv_2d_train.png, id=1071, 999.4941pt x 330.9966pt>
 File: Bilder/jpg/conv_2d_train.png Graphic file (type png)
 <use Bilder/jpg/conv_2d_train.png>
 Package pdftex.def Info: Bilder/jpg/conv_2d_train.png  used on input line 566.
 (pdftex.def)             Requested size: 411.93877pt x 136.4216pt.
- [55 <./Bilder/jpg/conv_2d_train.png>]
-<Bilder/jpg/eff_2d_train.png, id=1076, 999.4941pt x 330.9966pt>
+ [56 <./Bilder/jpg/conv_2d_train.png>]
+<Bilder/jpg/eff_2d_train.png, id=1081, 999.4941pt x 330.9966pt>
 File: Bilder/jpg/eff_2d_train.png Graphic file (type png)
 <use Bilder/jpg/eff_2d_train.png>
 Package pdftex.def Info: Bilder/jpg/eff_2d_train.png  used on input line 600.
 (pdftex.def)             Requested size: 411.93877pt x 136.4216pt.
- [56 <./Bilder/jpg/eff_2d_train.png>] [57]
-<Bilder/jpg/output_graph.png, id=1089, 2822.545pt x 3007.235pt>
+ [57 <./Bilder/jpg/eff_2d_train.png>] [58]
+<Bilder/jpg/output_graph.png, id=1094, 2822.545pt x 3007.235pt>
 File: Bilder/jpg/output_graph.png Graphic file (type png)
 <use Bilder/jpg/output_graph.png>
 Package pdftex.def Info: Bilder/jpg/output_graph.png  used on input line 640.
@@ -1708,18 +1705,18 @@ Overfull \hbox (5.56152pt too wide) in paragraph at lines 645--646
 []\T1/lmr/m/n/12 The \T1/lmtt/c/it/12 spec-tro-gram_-clas-si-fier.execution.aggregator \T1/lmr/m/n/12 and \T1/lmtt/c/it/12 spec-tro-gram_-clas-
  []
 
-[58] [59 <./Bilder/jpg/output_graph.png>] [60] [61]) [62]
+[59] [60 <./Bilder/jpg/output_graph.png>] [61] [62]) [63]
 \openout2 = `Kapitel/Kapitel_5.aux'.
 
  (./Kapitel/Kapitel_5.tex
 chapter 5.
-[63
+[64
 
 
 
 
-] [64]
-<Bilder/jpg/conv_1d_eval.jpg, id=1245, 765.35938pt x 587.19376pt>
+] [65]
+<Bilder/jpg/conv_1d_eval.jpg, id=1251, 765.35938pt x 587.19376pt>
 File: Bilder/jpg/conv_1d_eval.jpg Graphic file (type jpg)
 <use Bilder/jpg/conv_1d_eval.jpg>
 Package pdftex.def Info: Bilder/jpg/conv_1d_eval.jpg  used on input line 49.
@@ -1728,7 +1725,7 @@ Package pdftex.def Info: Bilder/jpg/conv_1d_eval.jpg  used on input line 49.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/jpg/conv_2d_eval.jpg, id=1248, 763.85374pt x 605.26125pt>
+<Bilder/jpg/conv_2d_eval.jpg, id=1254, 763.85374pt x 605.26125pt>
 File: Bilder/jpg/conv_2d_eval.jpg Graphic file (type jpg)
 <use Bilder/jpg/conv_2d_eval.jpg>
 Package pdftex.def Info: Bilder/jpg/conv_2d_eval.jpg  used on input line 60.
@@ -1736,8 +1733,8 @@ Package pdftex.def Info: Bilder/jpg/conv_2d_eval.jpg  used on input line 60.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[65] [66 <./Bilder/jpg/conv_1d_eval.jpg>]
-<Bilder/jpg/eff_1d_eval.jpg, id=1262, 766.865pt x 587.19376pt>
+[66] [67 <./Bilder/jpg/conv_1d_eval.jpg>]
+<Bilder/jpg/eff_1d_eval.jpg, id=1267, 766.865pt x 587.19376pt>
 File: Bilder/jpg/eff_1d_eval.jpg Graphic file (type jpg)
 <use Bilder/jpg/eff_1d_eval.jpg>
 Package pdftex.def Info: Bilder/jpg/eff_1d_eval.jpg  used on input line 75.
@@ -1746,8 +1743,8 @@ Package pdftex.def Info: Bilder/jpg/eff_1d_eval.jpg  used on input line 75.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[67 <./Bilder/jpg/conv_2d_eval.jpg>]
-<Bilder/jpg/eff_2d_eval.jpg, id=1268, 761.84625pt x 604.2575pt>
+[68 <./Bilder/jpg/conv_2d_eval.jpg>]
+<Bilder/jpg/eff_2d_eval.jpg, id=1273, 761.84625pt x 604.2575pt>
 File: Bilder/jpg/eff_2d_eval.jpg Graphic file (type jpg)
 <use Bilder/jpg/eff_2d_eval.jpg>
 Package pdftex.def Info: Bilder/jpg/eff_2d_eval.jpg  used on input line 86.
@@ -1756,7 +1753,7 @@ Package pdftex.def Info: Bilder/jpg/eff_2d_eval.jpg  used on input line 86.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[68 <./Bilder/jpg/eff_1d_eval.jpg>] [69 <./Bilder/jpg/eff_2d_eval.jpg>]) [70]
+[69 <./Bilder/jpg/eff_1d_eval.jpg>] [70 <./Bilder/jpg/eff_2d_eval.jpg>]) [71]
 \openout2 = `Kapitel/Kapitel_6.aux'.
 
  (./Kapitel/Kapitel_6.tex
@@ -1766,17 +1763,17 @@ Overfull \hbox (18.45026pt too wide) in paragraph at lines 9--10
 []\T1/lmtt/c/it/12 Data Aug-men-ta-tion: \T1/lmr/m/n/12 Dif-fer-ent data aug-men-ta-tion tech-niques such as horizion-
  []
 
-[71
+[72
 
 
 
 
-] [72]) [73]
+] [73]) [74]
 \openout2 = `Verzeichnis/Verzeichnis_Literatur.aux'.
 
  (./Verzeichnis/Verzeichnis_Literatur.tex (./main.bbl
 chapter without number
-[74
+[75
 
 
 
@@ -1796,12 +1793,12 @@ Underfull \hbox (badness 3240) in paragraph at lines 60--62
 \T1/lmtt/c/it/12 classification-[]metrics-[]accuracy-[]precision-[]recall/$[]\T1/lmr/m/n/12 , 2023.  Ac-
  []
 
-[75] [76])) [77]
+[76] [77])) [78]
 \openout2 = `Kapitel/Kapitel_Erklaerung.aux'.
 
  (./Kapitel/Kapitel_Erklaerung.tex
 chapter without number
-) [78
+) [79
 
 
 
@@ -1824,18 +1821,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 64874 strings out of 474222
- 1639902 string characters out of 5748733
- 2823125 words of memory out of 5000000
- 85486 multiletter control sequences out of 15000+600000
+ 64876 strings out of 474222
+ 1639922 string characters out of 5748733
+ 2823162 words of memory out of 5000000
+ 85487 multiletter control sequences out of 15000+600000
  634082 words of font info for 95 fonts, out of 8000000 for 9000
  1170 hyphenation exceptions out of 8191
  108i,20n,107p,10925b,2686s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (86 pages, 31285373 bytes).
+Output written on main.pdf (87 pages, 31285989 bytes).
 PDF statistics:
- 1677 PDF objects out of 1728 (max. 8388607)
- 1477 compressed objects within 15 object streams
- 682 named destinations out of 1000 (max. 500000)
+ 1682 PDF objects out of 1728 (max. 8388607)
+ 1481 compressed objects within 15 object streams
+ 683 named destinations out of 1000 (max. 500000)
  514 words of extra memory for PDF output out of 10000 (max. 10000000)
 
