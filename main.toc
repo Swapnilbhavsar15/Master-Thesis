@@ -50,10 +50,7 @@
 \contentsline {subsection}{\numberline {5.1.2}EfficientNet Model evaluation}{65}{subsection.5.1.2}%
 \contentsline {section}{\numberline {5.2}Comparison of the Model Performances}{67}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Conclusion}{70}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Future Work}{71}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Improving the Dataset and Training the Model}{71}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Addition of different activities}{72}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Perspective}{72}{section.6.2}%
-\contentsline {chapter}{\nonumberline Bibliography}{73}{chapter*.83}%
-\contentsline {chapter}{\nonumberline Declaration}{77}{chapter*.84}%
+\contentsline {section}{\numberline {6.1}Future Work and Perspective}{71}{section.6.1}%
+\contentsline {chapter}{\nonumberline Bibliography}{72}{chapter*.83}%
+\contentsline {chapter}{\nonumberline Declaration}{76}{chapter*.84}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

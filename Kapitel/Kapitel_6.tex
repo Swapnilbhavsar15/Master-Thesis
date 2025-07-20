@@ -1,35 +1,25 @@
 \chapter{Conclusion}
+\label{cha:conclusion}
 
-In this thesis, a robust system to train the model over different datasets and evaluation of those models over the streamed data from DAS configurator application is explained. The data is collected from a set experimental setup location (Energy Building) and different models such as ConvNext V2 and EfficientNet models are selected for same.  Data contains the footsteps and dataset was created by extracting the footsteps from the raw data. Two different types of datasets were created, one with 1 spatial channel and 1.728 seconds of sample length and other with 10 spatial channels and 2 seconds. Dataset contains two labels one for background noise and other for footsteps. Data from the datasets needs to be preprocessed before training the models.
+This thesis aimed to develop and validate a robust pipeline for detecting human movement from fiber optic sensing data. To achieve this goal, this work presented the spectrogram classifier framework, an end-to-end system designed to process raw Distributed Acoustic Sensing (DAS) phase data and classify human footsteps. The framework's methodology transforms the raw, one-dimensional signal into two-dimensional spectrograms, which are then fed into modern Convolutional Neural Networks (ConvNeXt V2 and EfficientNet) for classification.
 
-Prepocessing steps included the following:
+The success of the framework was rigorously evaluated by training and testing the models on two distinct dataset configurations: a single spatial channel setup (Dataset-1D) and a more complex ten-channel setup (Dataset-2D). The results of this comparison delivered the central finding of this thesis:
+
 \begin{itemize}
-\item \texttt{Spectrogram Generation:} The raw phase data is transformed into spectrograms using the STFT function. Spectrograms shows the clear spikes for the footsteps making it easier for the model to learn patterns.
-\item \texttt{Normalization:} Spectrogram tensors are normalized by calculating the mean and standard deviation over the entire dataset. It helps in stabilizing the training and ensuring the smooth convergence of model.
-\item \texttt{Data Augmentation:} Different data augmentation techniques such as horiziontal flipping, amplitude scaling, horizontal stretching and addition of gaussian noise were used. This helps in increasing the diversity in dataset and improving generalization for the model.
+\item Models trained on the ten-channel dataset (Dataset-2D) were highly successful, achieving testing accuracies above 99\%. In real-time evaluations, these models produced a clear and accurate footstep trail with very few false positives, demonstrating the framework's effectiveness for reliable detection and localization.
+
+\item In contrast, models trained on the single-channel dataset (Dataset-1D) proved insufficient for a reliable application. While their offline testing accuracies were acceptable (87.55\% and 91.89\% respectively), they generated a high number of false alarms on neighboring spatial channels during real-time evaluation, making it difficult to pinpoint the true location of footsteps.
 \end{itemize}
 
-Using the preprocessed data, the model are trained and tested over the different datasets. The training and testing results are analyzed and compared. For the ConvNext V2 model, the testing accuracies are 87.55\% and 99.48\% for 1 spatial channel and 10 spatial channel datasets respectively. The losses for the same model are 0.36 and 0.05 respectively. For the EfficientNet model, the testing accuracies are same at 99.43\% for 1 spatial channel and 10 spatial channel datasets respectively. The losses are also same at 0.09 for both dataset. The results show the similar performance for both models on the 10 spatial channel dataset while EfficientNet model performs better on 1 spatial channel dataset.
+Ultimately, this work successfully demonstrates the viability of the spectrogram classifier framework. The key conclusion is that while the general approach is sound, the inclusion of multi-channel spatial data is critical. The richer spatial context provided by ten channels allows the models to effectively learn the difference between a true event and spatial noise, moving the system from a simple proof of concept to a reliable, field ready foundation.
 
-The trained models are evaluated over the unknown data and the similar performance is seen on the streamed data from the DAS configurator application. Although a precise overall accuracy cannot be computed in real time, the models reliably highlight the footstep trail, mirroring their test dataset results. It was observed that the 10 spatial channel models are performing better than the 1 spatial channel models as it gives a lot lesser false positives. Detections are a lot focused on 10 spatial channel dataset as the model is able to learn patterns from multiple channels more effectively.
+\section{Future Work and Perspective}
+\label{sec:future_work_perspective}
 
-\section{Future Work}
+Building on the framework validated in this thesis, several key areas for future work can enhance its capabilities and broaden its application, moving it toward a comprehensive perimeter monitoring platform.
 
-Model training is an iterative process to keep improving the performance of the model. The model is trained and tested over the experimental setup proposed. Thus there are several areas which will be looked upon to improve the performance of the model.
+A key opportunity lies in iterative dataset improvement. The current evaluation reveals that false positives still occur, particularly in noisy environmental zones. The evaluation framework's ability to save all detections as \texttt{.npy} files is a powerful feature for addressing this. These false positives can be manually identified and added to the background training set. Retraining the model on this enriched dataset would teach it to ignore these specific noise patterns. While increasing the detection threshold (\texttt{min\_prob}) can reduce alarms, it risks missing fainter but legitimate footsteps; this iterative feedback loop is a more robust method for improving model precision without sacrificing sensitivity.
 
-\subsection{Improving the Dataset and Training the Model}
-After evaluating the model, there are lot of false positives in the detections especially in the noisy zones. These can be adjusted by increasing the threshold but there might be chance of fainter footsteps not being detected. The evaluation framework stores the detections as .npy files. False positives can be picked from them manually and added to the dataset. The background noise which is detected as footsteps are added to the dataset. Using the updated dataset, the model can be trained which helps model to learn the patterns more effectively and improve the performance of the model thus improving the accuracy and reducing the false positives. 
+The second major avenue is the expansion to other critical activities. The current framework provides a strong foundation for footstep detection, but a true perimeter security system must identify other threats. The model and training pipeline can be extended to classify events like fence cutting, climbing, and digging. This would require collecting and annotating new datasets for these activities and transitioning the model from a binary classifier to a multi-class classifier. By doing so, the system would evolve into a far more capable and versatile surveillance tool, suitable for deployment in high-security locations like airports and national borders.
 
-This process can be repeated iteratively to keep improving the performance of the model. To generalize the model, the dataset can be extended by adding more data from different locations and different people. This will help in improving the performance of the model.
-
-\subsection{Addition of different activities}
-The current model is used to detect footsteps by distinguishing them from background noise. The model can be extended to detect different activities such as fence cutting, climbing and digging. Dataset can be created for these activities and model can be trained on them. Using the model trained on these activities, the model can be used for perimeter monitoring. 
-
-Perimeter monitoring can be used in various locations such as airports, borders and national parks. Different activities based on the location can be added to the model. These models can be deployed to the locations and can be used for real time monitoring of the activities. 
-
-\section{Perspective}
-In the thesis, a demonstration of the viability of the phase based footstep detection using spectrogram classifiers on both single and multi spatial channel DAS data, it opens broader possibilities for future avenue. One direction is to increase the robustness of the model by training it repeatedly by improving the dataset with the help of evaluation framework.
-
-Second direction is to extend the model to detect different activities which can be used for perimeter monitoring and surveillance. The model can be used for the location specific activities and can be served for the needs of the location.
-
-Together, these extensions will move from the proof of concept to a more general, scalable DAS based perimeter monitoring platform.
+In perspective, this thesis has successfully moved beyond a simple lab experiment. By proving the effectiveness of the Spectrogram Classifier Framework and establishing the critical need for multi-channel data, it provides a clear and validated path toward a general-purpose, scalable, and highly reliable DAS-based security platform.
