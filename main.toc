@@ -39,21 +39,21 @@
 \contentsline {chapter}{\numberline {4}Implementation}{33}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Extraction of Footstep and Background Data}{33}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Preprocessing of extracted Data}{36}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Dataset}{40}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Dataset}{39}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Training and Validation of the Model}{40}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Testing of the model}{51}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Comparison of training, validation and testing performance}{53}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Real-time evaluation Framework}{58}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Evaluation}{64}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Real-time Evaluation of the Model}{64}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}ConvNext V2 Model evaluation}{66}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}EfficientNet Model evaluation}{68}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Comparison of the Model Performances}{70}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusion}{72}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Future Work}{73}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Improving the Dataset and Training the Model}{73}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Addition of different activities}{74}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Perspective}{74}{section.6.2}%
-\contentsline {chapter}{\nonumberline Bibliography}{75}{chapter*.76}%
-\contentsline {chapter}{\nonumberline Declaration}{79}{chapter*.77}%
+\contentsline {subsection}{\numberline {4.4.1}Testing of the model}{49}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Comparison of training, validation and testing performance}{51}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Real-time evaluation Framework}{57}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Evaluation}{62}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Real-time Evaluation of the Model}{62}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}ConvNext V2 Model evaluation}{64}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}EfficientNet Model evaluation}{65}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Comparison of the Model Performances}{67}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusion}{70}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Future Work}{71}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Improving the Dataset and Training the Model}{71}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Addition of different activities}{72}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Perspective}{72}{section.6.2}%
+\contentsline {chapter}{\nonumberline Bibliography}{73}{chapter*.83}%
+\contentsline {chapter}{\nonumberline Declaration}{77}{chapter*.84}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
