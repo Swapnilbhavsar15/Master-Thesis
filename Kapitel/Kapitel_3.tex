@@ -3,7 +3,7 @@
 %
 \chapter{System Design}
 \label{sec:system_design}
-In this chapter, the end-to-end system design for capturing, processing, and leveraging phase data for training deep learning models is presented. The experimental setup used describes the DAS deployment at the Energy Center in Hulb(B\"oblingen), the fiber-optic cable layout, and the HDF5 format~\cite{hdf5} used to archive raw phase measurements. Introduction to a modular data processing pipeline from ingestion and HDF5 file handling, through STFT-based spectrogram generation and logarithmic scaling, to final data serialization illustrated via a block diagram that highlights each stage inputs, outputs, and dependencies. Finally, the model training and testing framework, specifying how ConvNext V2 and EfficientNet will consume these preprocessed spectrograms is outlined.
+In this chapter, the end-to-end system design for capturing, processing, and leveraging phase data for training deep learning models is presented. The experimental setup used describes the DAS deployment at the Energy Center in Hulb(B\"oblingen), the fiber-optic cable layout, and the HDF5 format~\cite{hdf5} used to archive raw phase measurements. Introduction to a modular data processing pipeline from ingestion and HDF5 file handling, through STFT-based spectrogram generation and logarithmic scaling, to final data serialization illustrated via a block diagram that highlights each stage inputs, outputs, and dependencies. Finally, the model training and testing framework, specifying how ConvNeXt V2 and EfficientNet will consume these preprocessed spectrograms is outlined.
 
 \section{Experimental Setup for data acquisition}\label{sec:experimental_setup}
 Data acquisition represents a fundamental component of this work, and every effort has been made to ensure that the collection process is robust and methodologically sound. The data is gathered using the DAS configurator application, as discussed and elaborated upon in Section~\ref{sec:config_app}, it is then downloaded in HDF5 format. The data source is the Energy Building near the AP Sensing main office, where the DAS (Distributed Acoustic Sensing) system is installed. The DAS system, which operates using a state-of-the-art fiber optic cable deployed along a well-defined spatial route, captures walking patterns and other relevant phenomena. Figure~\ref{energiezentrale} illustrates the complete fiber optic cable layout deployed at the Energy Building. This visualization is essential, as it provides context for the subsequent analysis and aids in understanding the spatial distribution of the data.
@@ -295,7 +295,7 @@ Background noise is also be visualized in the spectrograms in a similar manner. 
 \end{figure}
 
 \subsection{Training the model}
-The dataset created from the preprocessing block contains the footstep data and background data. Training block takes the dataset and trains the model using the ConvNext V2 and EfficientNet models. Figure~\ref{fig:training_block} shows the block diagram of the training pipeline.
+The dataset created from the preprocessing block contains the footstep data and background data. Training block takes the dataset and trains the model using the ConvNeXt V2 and EfficientNet models. Figure~\ref{fig:training_block} shows the block diagram of the training pipeline.
 \begin{figure}[ht]
   \centering
   \resizebox{\textwidth}{!}{%%

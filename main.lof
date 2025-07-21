@@ -34,14 +34,14 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Spectrogram for walking data with 1 spatial channel}}{38}{figure.caption.62}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Spectrogram for walking data with 10 spatial channels}}{39}{figure.caption.63}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Augmentations of the input tensor}}{44}{figure.caption.66}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Loss and Accuracy plots for training and validation for ConvNext V2 on dataset-1D}}{52}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Loss and Accuracy plots for training and validation for ConvNeXt V2 on dataset-1D}}{52}{figure.caption.70}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Loss and Accuracy plots for training and validation for EfficientNet on dataset-1D}}{53}{figure.caption.72}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Loss and Accuracy plots for training and validation for ConvNext V2 with 10 spatial channels and 2 sample length}}{54}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Loss and Accuracy plots for training and validation for ConvNeXt V2 with 10 spatial channels and 2 sample length}}{54}{figure.caption.74}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Loss and Accuracy plots for training and validation for EfficientNet with 10 spatial channels and 2 sample length}}{56}{figure.caption.76}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Dependency Graph of \texttt {spectrogram\_classifier} module}}{58}{figure.caption.78}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces DAS Configurator Application detections for ConvNext V2 model on dataset-1D}}{65}{figure.caption.79}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces DAS Configurator Application detections for ConvNext V2 model on dataset-2D}}{66}{figure.caption.80}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces DAS Configurator Application detections for ConvNeXt V2 model on dataset-1D}}{65}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces DAS Configurator Application detections for ConvNeXt V2 model on dataset-2D}}{66}{figure.caption.80}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces DAS Configurator Application detections for EfficientNet V2 model on dataset-1D}}{67}{figure.caption.81}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces DAS Configurator Application detections for EfficientNet V2 model on dataset-2D}}{68}{figure.caption.82}%
 \addvspace {10\p@ }
