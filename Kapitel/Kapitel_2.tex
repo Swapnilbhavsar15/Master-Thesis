@@ -255,7 +255,6 @@ Horizontal scaling or time scaling is amplifying the image across the time scale
 \end{figure}
 
 \subsubsection{Gaussian Noise Injection}
-In this augmentation, gaussian noise is injected into the image to increase the robustness and generalization of the model. The noise is added to the image by controlling the mean and standard deviation. Figure~\ref{noise} demonstrates injecting the noise to a cat image with standard deviation set to 0.6 for demonstration purposes so that injection is visible.
 
 \begin{figure}[h]
   \centering
@@ -264,9 +263,11 @@ In this augmentation, gaussian noise is injected into the image to increase the 
   \label{noise}
 \end{figure}
 
+In this augmentation, gaussian noise is injected into the image to increase the robustness and generalization of the model. The noise is added to the image by controlling the mean and standard deviation. Figure~\ref{noise} demonstrates injecting the noise to a cat image with standard deviation set to 0.6 for demonstration purposes so that injection is visible.
+
 \subsection{Kornia}
 
-Kornia is an open-source computer vision library built on top of PyTorch\ref{sec:PyTorch} that provides a familiar, NumPy-like API for classical vision operations (e.g.\ geometric transforms, filtering, feature detection) in a fully differentiable and GPU-accelerated form. Unlike the traditional 'torchvision.transforms'~\cite{torchvision2024}, which execute many augmentations on the CPU and then copy results to the GPU, Kornia implements each operation as a native PyTorch module or function that runs directly on CUDA. This tight integration allows to include data augmentations as part of the model's computation graph-making them differentiable, reducing host-device synchronization overhead, and enabling end-to-end optimization when desired.
+Kornia is an open-source computer vision library built on top of PyTorch~\ref{sec:PyTorch} that provides a familiar, NumPy-like API for classical vision operations (e.g.\ geometric transforms, filtering, feature detection) in a fully differentiable and GPU-accelerated form. Unlike the traditional 'torchvision.transforms'~\cite{torchvision2024}, which execute many augmentations on the CPU and then copy results to the GPU, Kornia implements each operation as a native PyTorch module or function that runs directly on CUDA. This tight integration allows to include data augmentations as part of the model's computation graph-making them differentiable, reducing host-device synchronization overhead, and enabling end-to-end optimization when desired.
 
 In our spectrogram-based footstep classification pipeline, we use several Kornia augmentations (Horizontal Flip, Normalize) alongside custom PyTorch modules.  By leveraging Kornia, we gain:
 

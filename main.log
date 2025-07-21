@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.16)  21 JUL 2025 20:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.16)  21 JUL 2025 20:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1542,27 +1542,23 @@ File: Bilder/jpg/affine.png Graphic file (type png)
 Package pdftex.def Info: Bilder/jpg/affine.png  used on input line 252.
 (pdftex.def)             Requested size: 247.16577pt x 124.4761pt.
 [17 <./Bilder/jpg/Horizontal flip.png>]
-<Bilder/jpg/Noise.png, id=423, 1850.112pt x 959.0229pt>
+<Bilder/jpg/Noise.png, id=422, 1850.112pt x 959.0229pt>
 File: Bilder/jpg/Noise.png Graphic file (type png)
 <use Bilder/jpg/Noise.png>
-Package pdftex.def Info: Bilder/jpg/Noise.png  used on input line 262.
+Package pdftex.def Info: Bilder/jpg/Noise.png  used on input line 261.
 (pdftex.def)             Requested size: 247.16577pt x 128.11623pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[18 <./Bilder/jpg/amp.png> <./Bilder/jpg/affine.png>]
-Overfull \hbox (12.28755pt too wide) in paragraph at lines 276--277
+ [18 <./Bilder/jpg/amp.png> <./Bilder/jpg/affine.png> <./Bilder/jpg/Noise.png>]
+Overfull \hbox (12.28755pt too wide) in paragraph at lines 277--278
 \T1/lmr/m/n/12 tional API con-ven-tions as Py-Torch, al-low-ing seam-less in-te-gra-tion into 'torchvi-
  []
 
-[19 <./Bilder/jpg/Noise.png>] [20]
-Overfull \hbox (4.01003pt too wide) in paragraph at lines 297--298
+[19] [20]
+Overfull \hbox (4.01003pt too wide) in paragraph at lines 298--299
 \T1/lmr/m/n/12 tem-at-i-cally eval-u-ate dif-fer-ent spec-tro-gram pa-ram-e-ters, data-augmentation recipes,
  []
 
 
-Overfull \hbox (0.48735pt too wide) in paragraph at lines 297--298
+Overfull \hbox (0.48735pt too wide) in paragraph at lines 298--299
 \T1/lmr/m/n/12 and back-bone ar-chi-tec-tures, and find that a lightweight vision-transformer slightly
  []
 
@@ -1835,13 +1831,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  64929 strings out of 474222
  1640879 string characters out of 5748733
- 2921529 words of memory out of 5000000
+ 2922529 words of memory out of 5000000
  85535 multiletter control sequences out of 15000+600000
  634082 words of font info for 95 fonts, out of 8000000 for 9000
  1170 hyphenation exceptions out of 8191
  108i,20n,107p,10925b,2564s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (84 pages, 31285818 bytes).
+Output written on main.pdf (84 pages, 31285759 bytes).
 PDF statistics:
  1662 PDF objects out of 1728 (max. 8388607)
  1464 compressed objects within 15 object streams

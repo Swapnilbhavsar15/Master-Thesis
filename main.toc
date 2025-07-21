@@ -20,7 +20,7 @@
 \contentsline {subsubsection}{\nonumberline Vertical Scaling}{17}{subsubsection*.28}%
 \contentsline {subsubsection}{\nonumberline Horizontal Scaling}{17}{subsubsection*.31}%
 \contentsline {subsubsection}{\nonumberline Gaussian Noise Injection}{18}{subsubsection*.34}%
-\contentsline {subsection}{\numberline {2.2.3}Kornia}{18}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Kornia}{19}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Literature Review}{20}{section.2.3}%
 \contentsline {paragraph}{\nonumberline Time-frequency preprocessing.}{20}{paragraph*.37}%
 \contentsline {paragraph}{\nonumberline Deep-learning classification.}{20}{paragraph*.39}%
